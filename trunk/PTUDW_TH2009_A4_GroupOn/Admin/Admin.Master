@@ -1,0 +1,1944 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="PTUDW_TH2009_A4_GroupOn.Admin.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>a4 groupon, khuyến mãi , khuyến mại , tin khuyến mại , tin khuyen mai , thong tin khuyen mai , thông tin khuyến mãi , thông tin khuyến mại , khuyến mãi giảm giá , khuyen mai giam gia , Khuyến mại giảm giá , hàng khuyến mãi , hàng khuyến mại , hang khuyen mai , hàng giảm giá , hang giam gia , hàng giá rẻ , hang gia re , thông tin giảm giá , thong tin giam gia , giảm giá , giam gia , giá sốc , gia soc , giá cực sốc , gia cuc soc , giá rẻ , gia re , giá cực rẻ , gia cuc re , giảm giá hàng bán , giam gia hang ban , giá khuyến mãi , gia khuyen mai , giá khuyến mại , giá rẻ mỗi ngày , gia re moi ngay, gia tốt mỗi ngày , gia tot hang ngay , giá tốt hàng ngay , giá tốt hàng ngay , giá tốt , gia tot , giá rẻ hôm nay , gia re hom nay , mua hang gia re , mua hàng giá rẻ , mua hàng giảm giá , mua hang giam gia , mua hàng online , mua hang online , mua hàng qua mạng , mua hang qua mang , mua hàng trực tuyến , mua hang truc tuyen , mua giá rẻ , mua gia re , mua hàng giá rẻ trên mạng , mua hang gia re tren mang , ưu đãi giá , giá ưu đãi , coupon giảm giá , coupon khuyến mãi , coupon khuyến mại , groupon khuyến mãi , groupon ở việt nam , groupon tại việt nam , groupon vietnam
+    </title>
+    <link type="image/x-icon" href="/images/logo.png" rel="shortcut icon" />
+
+    <meta name="google-site-verification" content="WjdbemzrUp4gD0y2fV39gIuitX8zmShD94MdMGMTrJE" />
+    <meta name="alexaVerifyID" content="KBEMtVHU1A0mKpb4Xqa4c1lTeYo" />
+    <meta name="keywords" content="a4 groupon, khuyến mãi , khuyến mại , tin khuyến mại , tin khuyen mai , thong tin khuyen mai , thông tin khuyến mãi , thông tin khuyến mại , khuyến mãi giảm giá , khuyen mai giam gia , Khuyến mại giảm giá , hàng khuyến mãi , hàng khuyến mại , hang khuyen mai , hàng giảm giá , hang giam gia , hàng giá rẻ , hang gia re , thông tin giảm giá , thong tin giam gia , giảm giá , giam gia , giá sốc , gia soc , giá cực sốc , gia cuc soc , giá rẻ , gia re , giá cực rẻ , gia cuc re , giảm giá hàng bán , giam gia hang ban , giá khuyến mãi , gia khuyen mai , giá khuyến mại , giá rẻ mỗi ngày , gia re moi ngay, gia tốt mỗi ngày , gia tot hang ngay , giá tốt hàng ngay , giá tốt hàng ngay , giá tốt , gia tot , giá rẻ hôm nay , gia re hom nay , mua hang gia re , mua hàng giá rẻ , mua hàng giảm giá , mua hang giam gia , mua hàng online , mua hang online , mua hàng qua mạng , mua hang qua mang , mua hàng trực tuyến , mua hang truc tuyen , mua giá rẻ , mua gia re , mua hàng giá rẻ trên mạng , mua hang gia re tren mang , ưu đãi giá , giá ưu đãi , coupon giảm giá , coupon khuyến mãi , coupon khuyến mại , groupon khuyến mãi , groupon ở việt nam , groupon tại việt nam , groupon vietnam
+    "/>
+    <meta name="description" content="Giảm ngay từ 10-50% tổng hóa đơn khi sử dụng thẻ happy card tại các địa điểm trên hệ thống Giahot24h, hãy nhanh chân để chúng ta có thể sử dụng dịch vụ mua sắm, du lịch, làm đẹp, ăn uống, nhà hàng, thời trang, spa ...chỉ có tại giahot24h" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/format.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/nivo-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/skin.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/skinned-select.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.8.16.custom.css"/>
+
+    <script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.skinned-select.js"></script>
+    <script type="text/javascript" src="/js/jquery_mark.js"></script>    
+    <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#mycarousel').jcarousel({
+                visible: 6
+            });
+        });  
+    </script>  
+
+    <!-------------accordion menu--------------> 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //slides the element with class "menu_body" when paragraph with class "menu_head" is clicked 
+            $("#firstpane p.menu_head").click(function () {
+                $(this).css({ backgroundImage: "url(down-1.png)" }).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+                $(this).siblings().css({ backgroundImage: "url(left-1.png)" });
+            });
+            //slides the element with class "menu_body" when mouse is over the paragraph
+            $("#secondpane p.menu_head").mouseover(function () {
+                $(this).css({ backgroundImage: "url(down.png)" }).next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+                $(this).siblings().css({ backgroundImage: "url(left.png)" });
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30018463-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+        <h1 style="position:absolute; top:-9999px;">Giá hot 24h</h1>
+        <div id="background">
+            <img src="/images/background2.jpg" alt="" />
+        </div>
+
+        <div id="wrapper">
+            <div class="clear" style="height:28px;"></div>
+
+            <div id="secdiv">
+    	        <div class="w1000 auto">
+       	        <div class="logo"><a href="../Default.aspx"><img src="/images/logo.png" alt="" /></a></div>
+                <ul class="topmenu">
+                    <li><a href="#" title="" class="currenttopmenu">A4 Groupon</a></li>
+                    <li><a href="../About.aspx" title="giới thiệu a4 groupon" class="">Giới thiệu</a></li>
+                    <li><a href="#" class=""> Happy Card </a></li>
+                    <li><a href="#" class=""> Du lịch </a></li>   
+                    <!--  <li><a href="dia-diem.html" class="">Địa điểm</a></li>-->
+                    <li><a href="#" class="">Liên hệ</a></li>
+                </ul>
+
+                <div class="selectcountryaaaaa">
+                    <select onChange="window.location='#'+this.value">25<option value="25" selected=selected>TP Hồ Chí Minh</option><option value="23" >TP Nha Trang</option><option value="26" >TP Hà Nội</option><option value="27" >TP Phan Thiết</option><option value="28" >TP Đà Nẵng</option><option value="48" >TP Đà Lạt</option><option value="49" >Thành phố Huế</option><option value="50" >Tỉnh Bình Định</option><option value="52" >Đảo Phú Quốc</option><option value="51" >Tp Vũng Tàu</option></select>
+                </div>
+            </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="thirddiv">
+                <embed src="/images/banner.swf" width="1000" height="160" wmode="transparent" ></embed>
+            </div>
+
+            <div class="ctdiv_top"></div>
+
+            <div id="ctdiv">                    
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>
+
+            <div class="ctdiv_bot"></div>
+        </div>
+
+        
+        
+        <div class="ctdiv_top"></div>
+
+        <div id="wrap">            
+            <ul id="mycarousel" class="jcarousel-skin-tango">
+                <li><a href="#" target="_blank"><img src="/images/logo/1502895413.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="#" target="_blank"><img src="/images/logo/29447338810.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="#" target="_blank"><img src="/images/logo/1854085004.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="#" target="_blank"><img src="/images/logo/8098705249.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="#" target="_blank"><img src="/images/logo/5295178847.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="#" target="_blank"><img src="/images/logo/925664886.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="#" target="_blank"><img src="/images/logo/13185015365.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="#" target="_blank"><img src="/images/logo/2602045708.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="http://www.sophieparis.vn" target="_blank"><img src="/images/logo/7215067852.png" width="75" height="75" alt="" /></a></li>
+                <li><a href="http://www.saigon.newworldhotels.com/" target="_blank"><img src="/images/logo/19542459112.jpg" width="75" height="75" alt="" /></a></li>
+                <li><a href="http://pho24.com.vn" target="_blank"><img src="/images/logo/82795256611.png" width="75" height="75" alt="" /></a></li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="ctdiv_bot"></div>
+
+
+    <div id="footer">
+        <div class="w1000 auto">
+    	    <div class="bandroll">
+                <div class="ttbandroll"><a href="#">Hỗ trợ khách hàng</a></div>
+        	    <ul id="footmenu">
+                    <li><a href="#">Mua hàng online sẽ giảm giá</a></li>
+                    <li><a href="#">Đặt hàng online rẻ hơn</a></li>
+                    <li><a href="#">Mua deal giảm giá ở đâu?</a></li>
+                    <li><a href="#">Quy định sử dụng happy thẻ</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        
+    	    <div class="bandroll">
+                <div class="ttbandroll"><a href="#">Thông tin doanh nghiệp</a></div>
+        	    <ul id="footmenu">
+                    <li><a href="#">Cam kết hệ thống</a></li>
+                <li><a href="#">Liên hệ đặt quảng cáo</a></li>
+                <li><a href="#">Tham gia hệ thống</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        
+    	    <div class="bandroll">
+                <div class="ttbandroll"><a href="#">Tuyển dụng A4 Groupon</a></div>
+        	<ul id="footmenu">
+            	            	<li><a href="#">Tạp chí A4 Groupon</a></li>
+            	            	<li><a href="#">Độc quyền thương hiệu</a></li>
+            	            	<li><a href="#">Đại lý A4 Groupon</a></li>
+            	            	<li><a href="#">Tuyển dụng</a></li>
+            	            </ul>
+            <div class="clear"></div>
+            </div>
+        
+            <div class="address">
+                <div class="bold colorE">Công ty TNHH A4 Groupon</div>
+            <div class="bold colorE">Công ty A4 JSC</div>
+            <div class="color8 pad_t10">
+                <P>Địa chỉ: 227 - Nguyễn Văn Cừ - Quận 5 - Hồ Chí Minh - Việt Nam - Điện thoại: 01698383832 </P>
+                Website: <span class="orange">www.a4groupon.com</span> - <span class="orange">www.a4groupon.vn</span> - Email:  <span class="white">info@a4groupon.com</span> 
+            </div>
+
+		    <div class="fright pad_t10"><img src="/images/logo.png" width="80"/></div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    
+    <div id="topdiv">
+  	    <div class="w1000 auto">            
+  		    <div class="fright">
+                <h3>Trang của <a href="#">Admin</a> <span> | </span> <a href="../Default.aspx">Logout</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottomdiv">
+	    <div style="width:1200px; margin:auto;">
+        <div class="white pad_t10 pad_l40 fleft yellow">Hỗ trợ Deal<a href="ymsgr:sendIM?lethihiep171090"> <img class="vertical_mid" border="0" width="70" src="http://opi.yahoo.com/online?u=lethihiep171090&m=g&t=1" alt="Tư vấn "></a></div>
+        <div class="white pad_t10 pad_l40 fleft yellow">Hỗ trợ Thanh Toán <a href="ymsgr:sendIM?lethihiep171090"><img class="vertical_mid" border="0" width="70" src="http://opi.yahoo.com/online?u=lethihiep171090&m=g&t=1" alt="Tư vấn "></a></div>
+        <div class="white pad_t10 pad_l40 fleft yellow">Hỗ trợ Dịch Vụ <a href="ymsgr:sendIM?lethihiep171090"><img class="vertical_mid" border="0" width="70" src="http://opi.yahoo.com/online?u=lethihiep171090&m=g&t=1" alt="Tư vấn "></a></div>
+        <div class="white pad_t10 pad_l40 fleft yellow">Hỗ trợ pháp luật <a href="ymsgr:sendIM?lethihiep171090"><img class="vertical_mid" border="0" width="70" src="http://opi.yahoo.com/online?u=lethihiep171090&m=g&t=1" alt="Tư vấn "></a></div>
+        <div style="border-left:1px solid #f1f1f1; padding:0px 0 0 20px; float:left; color:white; margin:10px 0 0 20px;">
+            Hotline : 0123456789 - (08) 8888.8888
+        </div>
+    </div>
+    </div>
+</body>
+
+
+
+
+<script type="text/javascript" src="/js/jquery_mark.js"></script>
+<script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/skin.css" />
+
+ 
+<script type="text/javascript">
+
+    function mycarousel_initCallback(carousel) {
+        // Disable autoscrolling if the user clicks the prev or next button.
+        carousel.buttonNext.bind('click', function () {
+            carousel.startAuto(0);
+        });
+
+        carousel.buttonPrev.bind('click', function () {
+            carousel.startAuto(0);
+        });
+
+        // Pause autoscrolling if the user moves with the cursor over the clip.
+        carousel.clip.hover(function () {
+            carousel.stopAuto();
+        }, function () {
+            carousel.startAuto();
+        });
+    };
+
+    jQuery(document).ready(function () {
+        jQuery('#mycarousel').jcarousel({
+            auto: 2,
+            wrap: 'last',
+            initCallback: mycarousel_initCallback
+        });
+        jQuery('#mycarouseltop').jcarousel({
+            auto: 2,
+            wrap: 'last',
+            initCallback: mycarousel_initCallback
+        });
+    });
+
+</script>
+<script type="text/javascript">
+    function checkrecive() {
+        var email = document.getElementById('emailab');
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+
+        if (email.value == 'email') {
+            alert("Vui lòng nhập email");
+            email.focus();
+            return false;
+        }
+        if (!filter.test(email.value)) {
+            alert("Email bạn không hợp lệ. Vi dụ: admin@gmail.com");
+            email.focus
+            return false;
+        }
+    }
+</script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.16.custom.min.js"></script>
+ <link type="text/css" href="/js/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+  <style type="text/css">
+			
+			#dialog_link1 {text-decoration: none;position: relative;}
+			#dialog_link1 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog1').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link1').click(function () {
+                        $('#dialog1').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link2 {text-decoration: none;position: relative;}
+			#dialog_link2 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog2').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link2').click(function () {
+                        $('#dialog2').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link3 {text-decoration: none;position: relative;}
+			#dialog_link3 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog3').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link3').click(function () {
+                        $('#dialog3').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link4 {text-decoration: none;position: relative;}
+			#dialog_link4 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog4').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link4').click(function () {
+                        $('#dialog4').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link5 {text-decoration: none;position: relative;}
+			#dialog_link5 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog5').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link5').click(function () {
+                        $('#dialog5').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link6 {text-decoration: none;position: relative;}
+			#dialog_link6 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog6').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link6').click(function () {
+                        $('#dialog6').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link7 {text-decoration: none;position: relative;}
+			#dialog_link7 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog7').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link7').click(function () {
+                        $('#dialog7').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link8 {text-decoration: none;position: relative;}
+			#dialog_link8 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog8').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link8').click(function () {
+                        $('#dialog8').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link9 {text-decoration: none;position: relative;}
+			#dialog_link9 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog9').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link9').click(function () {
+                        $('#dialog9').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link10 {text-decoration: none;position: relative;}
+			#dialog_link10 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog10').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link10').click(function () {
+                        $('#dialog10').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link11 {text-decoration: none;position: relative;}
+			#dialog_link11 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog11').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link11').click(function () {
+                        $('#dialog11').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link12 {text-decoration: none;position: relative;}
+			#dialog_link12 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog12').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link12').click(function () {
+                        $('#dialog12').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link13 {text-decoration: none;position: relative;}
+			#dialog_link13 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog13').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link13').click(function () {
+                        $('#dialog13').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link14 {text-decoration: none;position: relative;}
+			#dialog_link14 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog14').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link14').click(function () {
+                        $('#dialog14').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link15 {text-decoration: none;position: relative;}
+			#dialog_link15 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog15').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link15').click(function () {
+                        $('#dialog15').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link16 {text-decoration: none;position: relative;}
+			#dialog_link16 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog16').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link16').click(function () {
+                        $('#dialog16').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link17 {text-decoration: none;position: relative;}
+			#dialog_link17 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog17').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link17').click(function () {
+                        $('#dialog17').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link18 {text-decoration: none;position: relative;}
+			#dialog_link18 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog18').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link18').click(function () {
+                        $('#dialog18').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link19 {text-decoration: none;position: relative;}
+			#dialog_link19 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog19').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link19').click(function () {
+                        $('#dialog19').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link20 {text-decoration: none;position: relative;}
+			#dialog_link20 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog20').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link20').click(function () {
+                        $('#dialog20').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link21 {text-decoration: none;position: relative;}
+			#dialog_link21 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog21').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link21').click(function () {
+                        $('#dialog21').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link22 {text-decoration: none;position: relative;}
+			#dialog_link22 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog22').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link22').click(function () {
+                        $('#dialog22').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link23 {text-decoration: none;position: relative;}
+			#dialog_link23 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog23').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link23').click(function () {
+                        $('#dialog23').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link24 {text-decoration: none;position: relative;}
+			#dialog_link24 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog24').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link24').click(function () {
+                        $('#dialog24').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link25 {text-decoration: none;position: relative;}
+			#dialog_link25 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog25').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link25').click(function () {
+                        $('#dialog25').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link26 {text-decoration: none;position: relative;}
+			#dialog_link26 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog26').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link26').click(function () {
+                        $('#dialog26').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link27 {text-decoration: none;position: relative;}
+			#dialog_link27 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog27').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link27').click(function () {
+                        $('#dialog27').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link28 {text-decoration: none;position: relative;}
+			#dialog_link28 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog28').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link28').click(function () {
+                        $('#dialog28').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link29 {text-decoration: none;position: relative;}
+			#dialog_link29 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog29').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link29').click(function () {
+                        $('#dialog29').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link30 {text-decoration: none;position: relative;}
+			#dialog_link30 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog30').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link30').click(function () {
+                        $('#dialog30').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link31 {text-decoration: none;position: relative;}
+			#dialog_link31 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog31').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link31').click(function () {
+                        $('#dialog31').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link32 {text-decoration: none;position: relative;}
+			#dialog_link32 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog32').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link32').click(function () {
+                        $('#dialog32').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link33 {text-decoration: none;position: relative;}
+			#dialog_link33 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog33').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link33').click(function () {
+                        $('#dialog33').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link34 {text-decoration: none;position: relative;}
+			#dialog_link34 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog34').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link34').click(function () {
+                        $('#dialog34').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link35 {text-decoration: none;position: relative;}
+			#dialog_link35 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog35').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link35').click(function () {
+                        $('#dialog35').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link36 {text-decoration: none;position: relative;}
+			#dialog_link36 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog36').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link36').click(function () {
+                        $('#dialog36').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link37 {text-decoration: none;position: relative;}
+			#dialog_link37 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog37').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link37').click(function () {
+                        $('#dialog37').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link38 {text-decoration: none;position: relative;}
+			#dialog_link38 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog38').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link38').click(function () {
+                        $('#dialog38').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link39 {text-decoration: none;position: relative;}
+			#dialog_link39 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog39').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link39').click(function () {
+                        $('#dialog39').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link40 {text-decoration: none;position: relative;}
+			#dialog_link40 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog40').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link40').click(function () {
+                        $('#dialog40').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link41 {text-decoration: none;position: relative;}
+			#dialog_link41 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog41').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link41').click(function () {
+                        $('#dialog41').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link42 {text-decoration: none;position: relative;}
+			#dialog_link42 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog42').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link42').click(function () {
+                        $('#dialog42').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link43 {text-decoration: none;position: relative;}
+			#dialog_link43 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog43').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link43').click(function () {
+                        $('#dialog43').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link44 {text-decoration: none;position: relative;}
+			#dialog_link44 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog44').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link44').click(function () {
+                        $('#dialog44').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link45 {text-decoration: none;position: relative;}
+			#dialog_link45 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog45').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link45').click(function () {
+                        $('#dialog45').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link46 {text-decoration: none;position: relative;}
+			#dialog_link46 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog46').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link46').click(function () {
+                        $('#dialog46').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link47 {text-decoration: none;position: relative;}
+			#dialog_link47 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog47').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link47').click(function () {
+                        $('#dialog47').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link48 {text-decoration: none;position: relative;}
+			#dialog_link48 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog48').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link48').click(function () {
+                        $('#dialog48').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ <style type="text/css">
+			
+			#dialog_link49 {text-decoration: none;position: relative;}
+			#dialog_link49 :hover{ border:none}
+
+			
+			</style>	
+            <script type="text/javascript">
+                $(function () {
+                    // Dialog			
+                    $('#dialog49').dialog({
+                        autoOpen: false,
+                        width: 600,
+                        buttons: {
+                            "Ok": function () {
+                                $(this).dialog("close");
+                            },
+                            "Cancel": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+
+                    // Dialog Link
+                    $('#dialog_link49').click(function () {
+                        $('#dialog49').dialog('open');
+                        return false;
+                    });
+
+
+
+
+                });
+		</script>
+ </html>

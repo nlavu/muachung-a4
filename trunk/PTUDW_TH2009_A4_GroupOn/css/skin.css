@@ -1,0 +1,101 @@
+.jcarousel-skin-tango .jcarousel-container {
+	position:absolute;
+	z-index:999999999;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 960px;
+    padding:10px 20px;
+	margin:0 auto 0px auto;
+	background:url(../images/ctdiv1.png) repeat-y;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  960px;
+    height: 75px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 100px;
+    height: 75px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jcarousel-skin-tango-top .jcarousel-container {
+	position:absolute;
+	
+}
+
+.jcarousel-skin-tango-top .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango-top .jcarousel-container-horizontal {
+    width: 950px;
+
+	margin:0 auto 0px auto;
+	
+}
+
+.jcarousel-skin-tango-top .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango-top .jcarousel-clip-horizontal {
+    width:  950px;
+    height: 240px;
+}
+
+.jcarousel-skin-tango-top .jcarousel-item {
+    width: 324px;
+    height: 240px; margin-left:0px; margin-right:0px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 0px;
+}
+
+.jcarousel-skin-tango-top .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 0px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango-top .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}

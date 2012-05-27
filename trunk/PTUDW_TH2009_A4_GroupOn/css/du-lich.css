@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:url(../img/bg.jpg) center center no-repeat fixed;font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#444; text-align:justify; line-height:1.5em;}
+#search_tool{padding:10px; height:30px; border-radius:10px; background-color:#FFF; width:770px; margin-left:20px;box-shadow:0 2px 8px #656565}
+.tim_bg{margin:-40px 30px 20px 20px; float:left}
+.search_btn{margin: 5px 0 10px 40px}
+.search_btn a{background: url(../img/search-tool-hover.png) left center no-repeat; padding:15px 0 15px 40px; font-size:16px}
+.search_btn a:hover{background:url(../img/search-tool.png) left center no-repeat; color:#ff690c}
+.tim_txt{margin:-25px 0 0 40px}
+.tim_txt a{background-color:blue; padding:10px}
+.qc-img{width:160px; margin-top:10px}
+
+
+
+#page{background-color:black; width:1000px; margin: 0 auto 0 auto}
+/*page left*/
+#page-left{float:left; width:170px; background-color:white;border-radius:10px;padding:5px 10px 10px 10px;box-shadow:0 2px 8px #656565; margin-top:20px;}
+.left-menu{margin-top:5px}
+.qc-img{width:160px; margin-top:10px}
+
+/*page right*/
+#page-right{float:right; width:810px;}
+
+/* page right san pham */
+.right-sp{float:left; background-color:white; margin:20px 0 0 20px; border-radius:10px; box-shadow:0 2px 8px #656565; width:230px; height:330px; padding:10px}
+.r-title{font-size:15px;text-align:center; height:40px;}
+.r-title a{color:#ff690c}
+.r-title a:hover{color:#ff690c}
+/*.r-title a:hover{color:#ff690c}*/
+.r-img{background:url(../img/img-bg.png) center center no-repeat; height:150px; width:230px; margin-top:10px }
+.r-content{margin-top:10px; font-size:12px;; height:60px}
+.xem-btn{float:left; width:84px; height:44px; background:url(../img/xem-btn.png) top left no-repeat;margin-top:7px; padding-top:12px}
+.xem-btn a{font-size:20px; color:#cc5403;padding:10px 20px 11px 21px; border-radius:12px;text-shadown 1px 1px 3px #666}
+.xem-btn a:hover{color:white}
+.r-thongtin{float:right;}
+.giatien{color:#ff690c; font-size:20px; text-align:center;}
+.tietkiem{float:left; text-align:center; padding-right:4px; color:#777}
+.gia9{float:right; text-align:center; padding-left:5px; color:#777;}
+.giatien{color:#ff690c; font-size:18px; text-align:center;}
+.thoigian{float:left; text-align:center; padding-right:4px; color:#777}
+.khoihanh{float:right; text-align:center; padding-left:5px; color:#777;}
