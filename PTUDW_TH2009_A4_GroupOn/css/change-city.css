@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*-----------------------------Accordion Menu---------------------------------------------------*/
+.menu_list {	
+	width: 180px;
+	padding-bottom:10px;
+}
+.menu_head {
+	cursor: pointer;
+	position: relative;
+	margin-top:10px;
+    font-weight:bold;
+   background: url(left-1.png) center right no-repeat;
+}
+.menu_head a:hover{color:#444}
+.menu_body {
+	display:none;
+}
+.menu_body a{
+  display:block;
+  color:#999;
+  padding:10px 10px 0 10px;
+  font-weight:bold;
+  background-color:white;
+  text-decoration:none;
+}
+.menu_body a:hover{
+  color: #ff690c;
+  }

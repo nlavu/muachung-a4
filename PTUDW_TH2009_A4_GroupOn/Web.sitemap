@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="A4MuaChung"  description="">
+    <siteMapNode url="~/About.aspx" title="About"  description="" />
+    <siteMapNode url="~/ProductDetail.aspx" title="Detail"  description="" />
+    <siteMapNode url="~/RegisterForm.aspx" title="Register"  description="" />
+    
+    <siteMapNode url="~/Admin/Admin.aspx" title="Admin"  description="" >
+      <siteMapNode url="~/Admin/AddNewCompany.aspx" title="Add New Company"  description="" />
+      <siteMapNode url="~/Admin/AddNewDeal.aspx" title="Add New Deal"  description="" />
+      <siteMapNode url="~/Admin/AllDeal.aspx" title="All Deal"  description="" />
+      <siteMapNode url="~/Admin/CurrentDeal.aspx" title="Current Deal"  description="" />
+      <siteMapNode url="~/Admin/DealCategory.aspx" title="Deal Category"  description="" />
+      <siteMapNode url="~/Admin/ManageCompany.aspx" title="Manage Company"  description="" />
+      <siteMapNode url="~/Admin/SiteConfig.aspx" title="Site Config"  description="" />
+    </siteMapNode>
+
+    <siteMapNode url="~/Member/AccountInfo.aspx" title="Member Info"  description="" >
+      <siteMapNode url="~/Member/MyOrder.aspx" title="My Order"  description="" />
+      <siteMapNode url="~/Member/OrderStep1.aspx" title="Step 1"  description="" />
+      <siteMapNode url="~/Member/OrderStep2.aspx" title="Step 2"  description="" />
+      <siteMapNode url="~/Member/OrderStep3.aspx" title="Step 3"  description="" />
+  </siteMapNode>
+    
+</siteMapNode>    
+</siteMap>
