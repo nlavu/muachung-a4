@@ -644,6 +644,27 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), main, ten, bdkm, ktkm, noidung, goc, km, slkho, slmua, vip, gio, ttduyet, hinh, loaivoucher, makhuvuc, madn, trangthai);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_VoucherXemMaVoucher")]
+		public ISingleResult<sp_VoucherXemMaVoucherResult> sp_VoucherXemMaVoucher([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> maInput)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maInput);
+			return ((ISingleResult<sp_VoucherXemMaVoucherResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_count_soluongdamua")]
+		public ISingleResult<sp_count_soluongdamuaResult> sp_count_soluongdamua([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> madh)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), madh);
+			return ((ISingleResult<sp_count_soluongdamuaResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_update_vouchersoluong")]
+		public int sp_update_vouchersoluong([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> sl, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mavoucher)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sl, mavoucher);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChiTietDonHang")]
@@ -6050,6 +6071,346 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
 				if ((this._ISAVAILABLE != value))
 				{
 					this._ISAVAILABLE = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_VoucherXemMaVoucherResult
+	{
+		
+		private int _MAVOUCHER;
+		
+		private string _TENVOUCHER;
+		
+		private System.DateTime _THOIGIANBDKM;
+		
+		private System.DateTime _THOIGIANKTKM;
+		
+		private string _NOIDUNG;
+		
+		private int _GIAGOC;
+		
+		private int _GIAKHUYENMAI;
+		
+		private int _SOLUONGTRONGKHO;
+		
+		private int _SOLUONGDAMUA;
+		
+		private int _THUOCTINHVIP;
+		
+		private int _TONGSOGIOBAN;
+		
+		private int _TRANGTHAIDUYET;
+		
+		private int _MAHINH;
+		
+		private int _MALOAIVOUCHER;
+		
+		private int _MAKHUVUC;
+		
+		private int _MADOANHNGHIEP;
+		
+		private int _ISAVAILABLE;
+		
+		public sp_VoucherXemMaVoucherResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAVOUCHER", DbType="Int NOT NULL")]
+		public int MAVOUCHER
+		{
+			get
+			{
+				return this._MAVOUCHER;
+			}
+			set
+			{
+				if ((this._MAVOUCHER != value))
+				{
+					this._MAVOUCHER = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TENVOUCHER", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string TENVOUCHER
+		{
+			get
+			{
+				return this._TENVOUCHER;
+			}
+			set
+			{
+				if ((this._TENVOUCHER != value))
+				{
+					this._TENVOUCHER = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_THOIGIANBDKM", DbType="DateTime NOT NULL")]
+		public System.DateTime THOIGIANBDKM
+		{
+			get
+			{
+				return this._THOIGIANBDKM;
+			}
+			set
+			{
+				if ((this._THOIGIANBDKM != value))
+				{
+					this._THOIGIANBDKM = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_THOIGIANKTKM", DbType="DateTime NOT NULL")]
+		public System.DateTime THOIGIANKTKM
+		{
+			get
+			{
+				return this._THOIGIANKTKM;
+			}
+			set
+			{
+				if ((this._THOIGIANKTKM != value))
+				{
+					this._THOIGIANKTKM = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOIDUNG", DbType="Text NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public string NOIDUNG
+		{
+			get
+			{
+				return this._NOIDUNG;
+			}
+			set
+			{
+				if ((this._NOIDUNG != value))
+				{
+					this._NOIDUNG = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GIAGOC", DbType="Int NOT NULL")]
+		public int GIAGOC
+		{
+			get
+			{
+				return this._GIAGOC;
+			}
+			set
+			{
+				if ((this._GIAGOC != value))
+				{
+					this._GIAGOC = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GIAKHUYENMAI", DbType="Int NOT NULL")]
+		public int GIAKHUYENMAI
+		{
+			get
+			{
+				return this._GIAKHUYENMAI;
+			}
+			set
+			{
+				if ((this._GIAKHUYENMAI != value))
+				{
+					this._GIAKHUYENMAI = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SOLUONGTRONGKHO", DbType="Int NOT NULL")]
+		public int SOLUONGTRONGKHO
+		{
+			get
+			{
+				return this._SOLUONGTRONGKHO;
+			}
+			set
+			{
+				if ((this._SOLUONGTRONGKHO != value))
+				{
+					this._SOLUONGTRONGKHO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SOLUONGDAMUA", DbType="Int NOT NULL")]
+		public int SOLUONGDAMUA
+		{
+			get
+			{
+				return this._SOLUONGDAMUA;
+			}
+			set
+			{
+				if ((this._SOLUONGDAMUA != value))
+				{
+					this._SOLUONGDAMUA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_THUOCTINHVIP", DbType="Int NOT NULL")]
+		public int THUOCTINHVIP
+		{
+			get
+			{
+				return this._THUOCTINHVIP;
+			}
+			set
+			{
+				if ((this._THUOCTINHVIP != value))
+				{
+					this._THUOCTINHVIP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TONGSOGIOBAN", DbType="Int NOT NULL")]
+		public int TONGSOGIOBAN
+		{
+			get
+			{
+				return this._TONGSOGIOBAN;
+			}
+			set
+			{
+				if ((this._TONGSOGIOBAN != value))
+				{
+					this._TONGSOGIOBAN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TRANGTHAIDUYET", DbType="Int NOT NULL")]
+		public int TRANGTHAIDUYET
+		{
+			get
+			{
+				return this._TRANGTHAIDUYET;
+			}
+			set
+			{
+				if ((this._TRANGTHAIDUYET != value))
+				{
+					this._TRANGTHAIDUYET = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAHINH", DbType="Int NOT NULL")]
+		public int MAHINH
+		{
+			get
+			{
+				return this._MAHINH;
+			}
+			set
+			{
+				if ((this._MAHINH != value))
+				{
+					this._MAHINH = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MALOAIVOUCHER", DbType="Int NOT NULL")]
+		public int MALOAIVOUCHER
+		{
+			get
+			{
+				return this._MALOAIVOUCHER;
+			}
+			set
+			{
+				if ((this._MALOAIVOUCHER != value))
+				{
+					this._MALOAIVOUCHER = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAKHUVUC", DbType="Int NOT NULL")]
+		public int MAKHUVUC
+		{
+			get
+			{
+				return this._MAKHUVUC;
+			}
+			set
+			{
+				if ((this._MAKHUVUC != value))
+				{
+					this._MAKHUVUC = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MADOANHNGHIEP", DbType="Int NOT NULL")]
+		public int MADOANHNGHIEP
+		{
+			get
+			{
+				return this._MADOANHNGHIEP;
+			}
+			set
+			{
+				if ((this._MADOANHNGHIEP != value))
+				{
+					this._MADOANHNGHIEP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ISAVAILABLE", DbType="Int NOT NULL")]
+		public int ISAVAILABLE
+		{
+			get
+			{
+				return this._ISAVAILABLE;
+			}
+			set
+			{
+				if ((this._ISAVAILABLE != value))
+				{
+					this._ISAVAILABLE = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_count_soluongdamuaResult
+	{
+		
+		private System.Nullable<int> _Column1;
+		
+		public sp_count_soluongdamuaResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Int")]
+		public System.Nullable<int> Column1
+		{
+			get
+			{
+				return this._Column1;
+			}
+			set
+			{
+				if ((this._Column1 != value))
+				{
+					this._Column1 = value;
 				}
 			}
 		}
