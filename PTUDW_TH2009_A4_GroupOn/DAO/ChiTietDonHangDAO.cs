@@ -31,7 +31,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstChiTietonHangDto;
         }*/
 
-        public static List<ChiTietDonHangDTO> SelectAllChiTietDonHang()
+        public  List<ChiTietDonHangDTO> SelectAllChiTietDonHang()
         {
             List<ChiTietDonHangDTO> lstChiTietonHangDto = new List<ChiTietDonHangDTO>();
             List<ChiTietDonHang> listCTDH = (List<ChiTietDonHang>)data.sp_ChiTietDonHangXem();
@@ -43,7 +43,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstChiTietonHangDto;
         }
 
-        public static List<ChiTietDonHangDTO> SelectChiTietDonHang_MaDH(int madh)
+        public  List<ChiTietDonHangDTO> SelectChiTietDonHang_MaDH(int madh)
         {
             List<ChiTietDonHangDTO> lstChiTietonHangDto = new List<ChiTietDonHangDTO>();
             List<ChiTietDonHang> listCTDH = (List<ChiTietDonHang>)data.sp_ChiTietDonHangXemMDH(madh);
@@ -55,7 +55,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstChiTietonHangDto;
         }
 
-        public static int InsertChiTietDonHang(ChiTietDonHangDTO ctdh)
+        public  int InsertChiTietDonHang(ChiTietDonHangDTO ctdh)
         {
             int kq = 0;
 
@@ -71,7 +71,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteChiTietDonHang_MaCT(int ctdh)
+        public  int DeleteChiTietDonHang_MaCT(int ctdh)
         {
             int kq = 0;
 
@@ -87,7 +87,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteChiTietDonHang_MaVoucher(int voucher)
+        public  int DeleteChiTietDonHang_MaVoucher(int voucher)
         {
             int kq = 0;
 
@@ -103,7 +103,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateCTDH(ChiTietDonHangDTO ctdh)
+        public  int UpdateCTDH(ChiTietDonHangDTO ctdh)
         {
             int kq = 0;
 

@@ -10,7 +10,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
 
-        public static List<CommentDTO> SelectAllComment()
+        public  List<CommentDTO> SelectAllComment()
         {
             List<CommentDTO> listComment = new List<CommentDTO>();
 
@@ -24,7 +24,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listComment;
         }
 
-        public static List<CommentDTO> SelectComment_Voucher(int v)
+        public  List<CommentDTO> SelectComment_Voucher(int v)
         {
             List<CommentDTO> listComment = new List<CommentDTO>();
 
@@ -38,7 +38,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listComment;
         }
 
-        public static int InsertComment(CommentDTO cm)
+        public  int InsertComment(CommentDTO cm)
         {
             int kq = 0;
 
@@ -53,7 +53,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteComment_MaVoucher(int mavoucher)
+        public  int DeleteComment_MaVoucher(int mavoucher)
         {
             int kq = 0;
 
@@ -68,7 +68,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteComment_TaiKhoan(string tk)
+        public  int DeleteComment_TaiKhoan(string tk)
         {
             int kq = 0;
 
@@ -83,7 +83,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteComment_TaiKhoan_MaVoucher(string tk, int ma)
+        public  int DeleteComment_TaiKhoan_MaVoucher(string tk, int ma)
         {
             int kq = 0;
 
@@ -98,7 +98,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateComment(CommentDTO cm)
+        public  int UpdateComment(CommentDTO cm)
         {
             int kq = 0;
 

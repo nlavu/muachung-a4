@@ -46,6 +46,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
             this.ISAVAILABLE1 = vc.ISAVAILABLE;
         }
 
+        public VoucherDTO()
+        {
+            // TODO: Complete member initialization
+        }
+
         public int MALOAIVOUCHER1
         {
             get { return MALOAIVOUCHER; }

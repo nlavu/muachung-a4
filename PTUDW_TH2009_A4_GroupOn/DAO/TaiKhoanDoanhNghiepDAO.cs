@@ -9,7 +9,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class TaiKhoanDoanhNghiepDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
-        public static List<TaiKhoanDoanhNghiepDTO> SelectAllTaiKhoanDoanhNghiep()
+        public  List<TaiKhoanDoanhNghiepDTO> SelectAllTaiKhoanDoanhNghiep()
         {
             List<TaiKhoanDoanhNghiepDTO> listTKDTO = new List<TaiKhoanDoanhNghiepDTO>();
 
@@ -23,7 +23,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listTKDTO;
         }
 
-        public static int InsertTaiKhoanDoanhNghiep(TaiKhoanDoanhNghiepDTO tk)
+        public  int InsertTaiKhoanDoanhNghiep(TaiKhoanDoanhNghiepDTO tk)
         {
             int kq = 0;
 
@@ -37,7 +37,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateTaiKhoanDoanhNghiep(TaiKhoanDoanhNghiepDTO tk)
+        public  int UpdateTaiKhoanDoanhNghiep(TaiKhoanDoanhNghiepDTO tk)
         {
             int kq = 0;
 

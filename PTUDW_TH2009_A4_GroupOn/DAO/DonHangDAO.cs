@@ -9,7 +9,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class DonHangDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
-        public static List<DonHangDTO> SelectAllDonHang()
+        public  List<DonHangDTO> SelectAllDonHang()
         {
             List<DonHangDTO> listDHDTO = new List<DonHangDTO>();
 
@@ -23,7 +23,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listDHDTO;
         }
 
-        public static List<DonHangDTO> SelectDonHang_Username(string username)
+        public  List<DonHangDTO> SelectDonHang_Username(string username)
         {
             List<DonHangDTO> listDHDTO = new List<DonHangDTO>();
 
@@ -37,7 +37,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listDHDTO;
         }
 
-        public static int InsertDonHang(DonHangDTO dh)
+        public  int InsertDonHang(DonHangDTO dh)
         {
             int kq = 0;
 
@@ -51,7 +51,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteDonHang_Ma(int madh)
+        public  int DeleteDonHang_Ma(int madh)
         {
             int kq = 0;
 
@@ -66,7 +66,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteDonHang_TaiKhoan(string tk)
+        public  int DeleteDonHang_TaiKhoan(string tk)
         {
             int kq = 0;
 
@@ -81,7 +81,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateDonHang(DonHangDTO dh)
+        public  int UpdateDonHang(DonHangDTO dh)
         {
             int kq = 0;
 

@@ -9,7 +9,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class TaiKhoanThuongDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
-        public static List<TaiKhoanThuongDTO> SelectAllTaiKhoanThuong()
+        public  List<TaiKhoanThuongDTO> SelectAllTaiKhoanThuong()
         {
             List<TaiKhoanThuongDTO> listTKDTO = new List<TaiKhoanThuongDTO>();
 
@@ -23,7 +23,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listTKDTO;
         }
 
-        public static int InsertTaiKhoanThuong(TaiKhoanThuongDTO tk)
+        public  int InsertTaiKhoanThuong(TaiKhoanThuongDTO tk)
         {
             int kq = 0;
 
@@ -37,7 +37,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateTaiKhoanThuong(TaiKhoanThuongDTO tk)
+        public  int UpdateTaiKhoanThuong(TaiKhoanThuongDTO tk)
         {
             int kq = 0;
 

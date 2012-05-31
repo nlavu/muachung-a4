@@ -9,7 +9,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class EmailDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
-        public static List<EmailDTO> SelectAllEmail()
+        public  List<EmailDTO> SelectAllEmail()
         {
             List<EmailDTO> listEDTO = new List<EmailDTO>();
 
@@ -23,7 +23,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listEDTO;
         }
 
-        public static int InsertEmail(EmailDTO e)
+        public  int InsertEmail(EmailDTO e)
         {
             int kq = 0;
             try {
@@ -35,7 +35,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteEmail(string e)
+        public  int DeleteEmail(string e)
         {
             int kq = 0;
             try
@@ -48,7 +48,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateEmail(EmailDTO mailcu, EmailDTO mailmoi)
+        public  int UpdateEmail(EmailDTO mailcu, EmailDTO mailmoi)
         {
             int kq = 0;
 

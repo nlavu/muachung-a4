@@ -34,7 +34,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public static List<VoucherDTO> SelectVoucher_DoanhNghiep(int madn)
+        public  List<VoucherDTO> SelectVoucher_DoanhNghiep(int madn)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = (List<Voucher>)data.sp_VoucherXemDN(madn);
@@ -46,7 +46,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public static List<VoucherDTO> SelectVoucher_KhuVuc(int kv)
+        public  List<VoucherDTO> SelectVoucher_KhuVuc(int kv)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = (List<Voucher>)data.sp_VoucherXemKhuVuc(kv);
@@ -58,7 +58,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public static List<VoucherDTO> SelectVoucher_Loai(int loai)
+        public  List<VoucherDTO> SelectVoucher_Loai(int loai)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = (List<Voucher>)data.sp_VoucherXemloai(loai);
@@ -70,7 +70,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public static List<VoucherDTO> SelectVoucher_Loai(int loai, int khuvuc)
+        public  List<VoucherDTO> SelectVoucher_Loai(int loai, int khuvuc)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = (List<Voucher>)data.sp_VoucherXemloaiKV(loai, khuvuc);
@@ -82,7 +82,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public static int InsertVoucher(VoucherDTO v)
+        public int InsertVoucher(VoucherDTO v)
         {
             int kq = 0;
 
@@ -96,7 +96,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteVoucher_DoanhNghiep(int madn)
+        public  int DeleteVoucher_DoanhNghiep(int madn)
         {
             int kq = 0;
 
@@ -111,7 +111,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteVoucher_KhuVuc(int makv)
+        public  int DeleteVoucher_KhuVuc(int makv)
         {
             int kq = 0;
 
@@ -126,7 +126,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteVoucher_Loai(int loai)
+        public  int DeleteVoucher_Loai(int loai)
         {
             int kq = 0;
 
@@ -141,7 +141,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteVoucher_MaVoucher(int ma)
+        public  int DeleteVoucher_MaVoucher(int ma)
         {
             int kq = 0;
 
@@ -156,7 +156,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteVoucher_NgayKetThuc(DateTime ngay)
+        public  int DeleteVoucher_NgayKetThuc(DateTime ngay)
         {
             int kq = 0;
 
@@ -171,7 +171,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateVoucher(VoucherDTO v)
+        public  int UpdateVoucher(VoucherDTO v)
         {
             int kq = 0;
 
