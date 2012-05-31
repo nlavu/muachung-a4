@@ -9,7 +9,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class KhuVucDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
-        public static List<KhuVucDTO> SelectAllKhuVuc()
+        public  List<KhuVucDTO> SelectAllKhuVuc()
         {
             List<KhuVucDTO> listKVDTO = new List<KhuVucDTO>();
 
@@ -23,7 +23,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listKVDTO;
         }
 
-        public static int InsertKhuVuc(KhuVucDTO kv)
+        public  int InsertKhuVuc(KhuVucDTO kv)
         {
             int kq = 0;
 
@@ -37,7 +37,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteKhuVuc(int makv)
+        public  int DeleteKhuVuc(int makv)
         {
             int kq = 0;
 
@@ -52,7 +52,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateKhuVuc(KhuVucDTO kv)
+        public  int UpdateKhuVuc(KhuVucDTO kv)
         {
             int kq = 0;
 

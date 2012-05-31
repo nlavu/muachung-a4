@@ -9,7 +9,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class HinhAnhDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
-        public static List<HinhAnhDTO> SelectAllHinhAnh()
+        public  List<HinhAnhDTO> SelectAllHinhAnh()
         {
             List<HinhAnhDTO> listHADTO = new List<HinhAnhDTO>();
 
@@ -23,7 +23,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listHADTO;
         }
 
-        public static int InsertHinhAnh(HinhAnhDTO ha)
+        public  int InsertHinhAnh(HinhAnhDTO ha)
         {
             int kq = 0;
 
@@ -37,7 +37,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int DeleteHinhAnh(int maha)
+        public  int DeleteHinhAnh(int maha)
         {
             int kq = 0;
 
@@ -52,7 +52,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateHinhAnh(HinhAnhDTO ha)
+        public  int UpdateHinhAnh(HinhAnhDTO ha)
         {
             int kq = 0;
 

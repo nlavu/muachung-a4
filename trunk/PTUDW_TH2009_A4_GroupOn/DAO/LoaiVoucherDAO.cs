@@ -9,7 +9,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class LoaiVoucherDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
-        public static List<LoaiVoucherDTO> SelectAllLoaiVoucher()
+        public  List<LoaiVoucherDTO> SelectAllLoaiVoucher()
         {
             List<LoaiVoucherDTO> listLKVDTO = new List<LoaiVoucherDTO>();
 
@@ -23,7 +23,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return listLKVDTO;
         }
 
-        public static int InsertLoaiVoucher(LoaiVoucherDTO vc)
+        public  int InsertLoaiVoucher(LoaiVoucherDTO vc)
         {
             int kq = 0;
 
@@ -37,7 +37,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int InsertLoaiVoucher(int vc)
+        public  int InsertLoaiVoucher(int vc)
         {
             int kq = 0;
 
@@ -52,7 +52,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public static int UpdateLoaiVoucher(LoaiVoucherDTO vc)
+        public  int UpdateLoaiVoucher(LoaiVoucherDTO vc)
         {
             int kq = 0;
 

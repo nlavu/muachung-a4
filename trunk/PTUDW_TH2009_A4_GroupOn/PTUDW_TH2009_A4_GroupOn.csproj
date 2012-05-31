@@ -132,6 +132,7 @@
     <Content Include="css\skinned-select.css" />
     <Content Include="css\starrating.css" />
     <Content Include="css\style.css" />
+    <Content Include="DoanhNghiep\ThemDeal.aspx" />
     <Content Include="images\804787776logo nho%282%29.JPG" />
     <Content Include="images\background2.jpg" />
     <Content Include="images\background\arrow.png" />
@@ -413,6 +414,25 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DoanhNghiep\DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhNghiep\DoanhNghiepSite.Master.cs">
+      <DependentUpon>DoanhNghiepSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\DoanhNghiepSite.Master.designer.cs">
+      <DependentUpon>DoanhNghiepSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhNghiep\ThemDeal.aspx.cs">
+      <DependentUpon>ThemDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\ThemDeal.aspx.designer.cs">
+      <DependentUpon>ThemDeal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DTO\ChiTietDonHangDTO.cs" />
     <Compile Include="DTO\CommentDTO.cs" />
     <Compile Include="DTO\DataClasses1.designer.cs">
@@ -507,7 +527,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DoanhNghiep\" />
     <Folder Include="images\smiley\" />
   </ItemGroup>
   <ItemGroup>
@@ -516,6 +535,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.Master" />
+    <Content Include="DoanhNghiep\DoanhNghiepSite.Master" />
+    <None Include="DoanhNghiep\DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="DTO\DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
@@ -533,6 +558,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DTO\DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DoanhNghiep\DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
   </ItemGroup>
