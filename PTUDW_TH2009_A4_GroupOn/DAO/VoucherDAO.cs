@@ -186,5 +186,19 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
+        public void TinhSoLuongDaMua(int madh)
+        {
+            //ChiTietDonHangDTO ctdh = new ChiTietDonHangDTO();
+            //ctdh = (ChiTietDonHangDTO)data.sp_ChiTietDonHangXemMDH(madh);
+            //int soluongmua = ctdh.SOLUONGMUA1;
+            //VoucherDTO voucher = (VoucherDTO)data.sp_VoucherXemMaVoucher(madh);
+            //int soluongkho = voucher.SOLUONGTRONGKHO1;
+            //int conlai = 0;
+            //conlai = soluongkho - soluongmua;
+            ChiTietDonHangDTO ctdh = (ChiTietDonHangDTO)data.sp_ChiTietDonHangXemMDH(madh);
+            int soluongmua = Int32.Parse(data.sp_count_soluongdamua(madh).ToString());
+            data.sp_update_vouchersoluong(soluongmua, ctdh.VOUCHERDH1);
+        }
+
     }
 }

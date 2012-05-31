@@ -630,4 +630,37 @@
     <Parameter Name="trangthai" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.sp_VoucherXemMaVoucher" Method="sp_VoucherXemMaVoucher">
+    <Parameter Name="maInput" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_VoucherXemMaVoucherResult">
+      <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="THOIGIANKTKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="GIAGOC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GIAKHUYENMAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SOLUONGTRONGKHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SOLUONGDAMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="THUOCTINHVIP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TONGSOGIOBAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TRANGTHAIDUYET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MAHINH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MADOANHNGHIEP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_count_soluongdamua" Method="sp_count_soluongdamua">
+    <Parameter Name="madh" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_count_soluongdamuaResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_update_vouchersoluong" Method="sp_update_vouchersoluong">
+    <Parameter Name="sl" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mavoucher" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

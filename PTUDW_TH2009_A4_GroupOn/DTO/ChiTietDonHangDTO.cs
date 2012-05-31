@@ -26,6 +26,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
             VOUCHERDH = ct.VOUCHERDH;
         }
 
+        public ChiTietDonHangDTO()
+        {
+            // TODO: Complete member initialization
+        }
+
         public int SOLUONGMUA1
         {
             get { return SOLUONGMUA; }
