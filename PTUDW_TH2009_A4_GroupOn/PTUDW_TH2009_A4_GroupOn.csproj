@@ -133,6 +133,8 @@
     <Content Include="css\starrating.css" />
     <Content Include="css\style.css" />
     <Content Include="DoanhNghiep\ThemDeal.aspx" />
+    <Content Include="DoanhNghiep\UpdateDeal.aspx" />
+    <Content Include="DoanhNghiep\XoaDeal.aspx" />
     <Content Include="images\804787776logo nho%282%29.JPG" />
     <Content Include="images\background2.jpg" />
     <Content Include="images\background\arrow.png" />
@@ -302,13 +304,16 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="DNDangNhap.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -414,11 +419,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DoanhNghiep\DataClasses1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
-    </Compile>
     <Compile Include="DoanhNghiep\DoanhNghiepSite.Master.cs">
       <DependentUpon>DoanhNghiepSite.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -432,6 +432,20 @@
     </Compile>
     <Compile Include="DoanhNghiep\ThemDeal.aspx.designer.cs">
       <DependentUpon>ThemDeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhNghiep\UpdateDeal.aspx.cs">
+      <DependentUpon>UpdateDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\UpdateDeal.aspx.designer.cs">
+      <DependentUpon>UpdateDeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhNghiep\XoaDeal.aspx.cs">
+      <DependentUpon>XoaDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\XoaDeal.aspx.designer.cs">
+      <DependentUpon>XoaDeal.aspx</DependentUpon>
     </Compile>
     <Compile Include="DTO\ChiTietDonHangDTO.cs" />
     <Compile Include="DTO\CommentDTO.cs" />
@@ -524,6 +538,13 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="DNDangNhap.aspx.cs">
+      <DependentUpon>DNDangNhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DNDangNhap.aspx.designer.cs">
+      <DependentUpon>DNDangNhap.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -536,11 +557,6 @@
   <ItemGroup>
     <Content Include="Admin\Admin.Master" />
     <Content Include="DoanhNghiep\DoanhNghiepSite.Master" />
-    <None Include="DoanhNghiep\DataClasses1.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="DTO\DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
@@ -558,11 +574,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DTO\DataClasses1.dbml.layout">
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DoanhNghiep\DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
   </ItemGroup>

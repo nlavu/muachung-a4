@@ -81,7 +81,7 @@
         <classShapeMoniker Id="a78fadb0-dbeb-44a1-b43b-995aca89cb18" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.25 : 5.78929768880208); (12 : 5.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(11.25 : 5.78929768880208); (11.5416666666667 : 5.78929768880208 : JumpStart); (11.7083333333333 : 5.78929768880208 : JumpEnd); (12 : 5.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataClasses1DataContext/Voucher/Voucher_Comment" />
       <nodes>
         <classShapeMoniker Id="c7a7ff63-fb63-4eef-ab99-54ab22cd105a" />
@@ -130,7 +130,7 @@
         <classShapeMoniker Id="4b1e2488-3f0f-4c63-8f8b-0cfefd56c4ac" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 6.87424967447917); (9.25 : 6.87424967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.5 : 6.87424967447917); (7.16666666666667 : 6.87424967447917 : JumpStart); (7.33333333333333 : 6.87424967447917 : JumpEnd); (7.69791916666667 : 6.87424967447917 : JumpStart); (7.86458583333333 : 6.87424967447917 : JumpEnd); (9.25 : 6.87424967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataClasses1DataContext/TaiKhoanDoanhNghiep/TaiKhoanDoanhNghiep_Voucher" />
       <nodes>
         <classShapeMoniker Id="fb27a7ed-cb6c-4818-91ec-3dfcff35f701" />

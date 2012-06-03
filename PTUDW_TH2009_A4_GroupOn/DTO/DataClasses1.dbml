@@ -100,7 +100,7 @@
     </Type>
   </Table>
   <Table Name="dbo.TAIKHOAN" Member="TAIKHOANs">
-    <Type Name="TAIKHOAN">
+    <Type Name="TAIKHOAN" Id="ID1">
       <Column Name="USERNAME" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="PASSWORD" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="MADN" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -261,13 +261,7 @@
   </Function>
   <Function Name="dbo.sp_TaiKhoanXemUser" Method="sp_TaiKhoanXemUser">
     <Parameter Name="userIn" Type="System.String" DbType="NVarChar(100)" />
-    <ElementType Name="sp_TaiKhoanXemUserResult">
-      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="PASSWORD" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="MADN" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MAKH" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="TKISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID1" />
   </Function>
   <Function Name="dbo.sp_VoucherXemDN" Method="sp_VoucherXemDN">
     <Parameter Name="dnInput" Type="System.Int32" DbType="Int" />
