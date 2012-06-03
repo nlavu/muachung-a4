@@ -27,7 +27,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<TaiKhoanDTO> listTKDTO = new List<TaiKhoanDTO>();
 
-            List<TAIKHOAN> listTK = (List<TAIKHOAN>)data.sp_TaiKhoanXemUser(user);
+            List<TAIKHOAN> listTK = data.sp_TaiKhoanXemUser(user).ToList();
             foreach (TAIKHOAN dh in listTK)
             {
                 TaiKhoanDTO dhdto = new TaiKhoanDTO(dh);

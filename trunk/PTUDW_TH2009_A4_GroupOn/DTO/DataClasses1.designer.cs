@@ -290,10 +290,10 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_TaiKhoanXemUser")]
-		public ISingleResult<sp_TaiKhoanXemUserResult> sp_TaiKhoanXemUser([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string userIn)
+		public ISingleResult<TAIKHOAN> sp_TaiKhoanXemUser([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string userIn)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userIn);
-			return ((ISingleResult<sp_TaiKhoanXemUserResult>)(result.ReturnValue));
+			return ((ISingleResult<TAIKHOAN>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_VoucherXemDN")]
@@ -4717,104 +4717,6 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
 				if ((this._TKUSERNAME != value))
 				{
 					this._TKUSERNAME = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_TaiKhoanXemUserResult
-	{
-		
-		private string _USERNAME;
-		
-		private string _PASSWORD;
-		
-		private System.Nullable<int> _MADN;
-		
-		private System.Nullable<int> _MAKH;
-		
-		private int _TKISAVAILABLE;
-		
-		public sp_TaiKhoanXemUserResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_USERNAME", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string USERNAME
-		{
-			get
-			{
-				return this._USERNAME;
-			}
-			set
-			{
-				if ((this._USERNAME != value))
-				{
-					this._USERNAME = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PASSWORD", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string PASSWORD
-		{
-			get
-			{
-				return this._PASSWORD;
-			}
-			set
-			{
-				if ((this._PASSWORD != value))
-				{
-					this._PASSWORD = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MADN", DbType="Int")]
-		public System.Nullable<int> MADN
-		{
-			get
-			{
-				return this._MADN;
-			}
-			set
-			{
-				if ((this._MADN != value))
-				{
-					this._MADN = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAKH", DbType="Int")]
-		public System.Nullable<int> MAKH
-		{
-			get
-			{
-				return this._MAKH;
-			}
-			set
-			{
-				if ((this._MAKH != value))
-				{
-					this._MAKH = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TKISAVAILABLE", DbType="Int NOT NULL")]
-		public int TKISAVAILABLE
-		{
-			get
-			{
-				return this._TKISAVAILABLE;
-			}
-			set
-			{
-				if ((this._TKISAVAILABLE != value))
-				{
-					this._TKISAVAILABLE = value;
 				}
 			}
 		}
