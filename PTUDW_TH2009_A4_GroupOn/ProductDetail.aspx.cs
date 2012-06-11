@@ -11,7 +11,11 @@ namespace PTUDW_TH2009_A4_GroupOn
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request["maSP"] == null)
+            {
+                
+            }
+            int maSP = int.Parse(Request["maSP"].ToString());
         }
     }
 }

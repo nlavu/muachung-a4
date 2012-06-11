@@ -13,7 +13,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<HinhAnhDTO> listHADTO = new List<HinhAnhDTO>();
 
-            List<HinhAnh> listHA = (List<HinhAnh>)data.sp_HinhAnhXem();
+            List<HinhAnh> listHA = data.sp_HinhAnhXem().ToList();
             foreach (HinhAnh dh in listHA)
             {
                 HinhAnhDTO dhdto = new HinhAnhDTO(dh);

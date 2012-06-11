@@ -13,7 +13,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<EmailDTO> listEDTO = new List<EmailDTO>();
 
-            List<Email> listE = (List<Email>)data.sp_EmailXem();
+            List<Email> listE = data.sp_EmailXem().ToList();
             foreach (Email e in listE)
             {
                 EmailDTO dhdto = new EmailDTO(e);

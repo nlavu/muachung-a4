@@ -14,7 +14,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<CommentDTO> listComment = new List<CommentDTO>();
 
-            List<Comment> listcm = (List<Comment>)data.sp_CommentXem();
+            List<Comment> listcm = data.sp_CommentXem().ToList();
             foreach (Comment cm in listcm)
             {
                 CommentDTO cmDto = new CommentDTO(cm);
@@ -28,7 +28,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<CommentDTO> listComment = new List<CommentDTO>();
 
-            List<Comment> listcm = (List<Comment>)data.sp_CommentXemVoucher(v);
+            List<Comment> listcm = data.sp_CommentXemVoucher(v).ToList();
             foreach (Comment cm in listcm)
             {
                 CommentDTO cmDto = new CommentDTO(cm);

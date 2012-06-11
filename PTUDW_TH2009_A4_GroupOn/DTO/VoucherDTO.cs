@@ -40,7 +40,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
             this.TONGSOGIOBAN1 = vc.TONGSOGIOBAN;
             this.TRANGTHAIDUYET1 = vc.TRANGTHAIDUYET;
             this.MAHINH1 = vc.MAHINH;
-            this.MALOAIVOUCHER1 = MALOAIVOUCHER;
+            this.MALOAIVOUCHER1 = vc.MALOAIVOUCHER;
             this.MAKHUVUC1 = vc.MAKHUVUC;
             this.MADOANHNGHIEP1 = vc.MADOANHNGHIEP;
             this.ISAVAILABLE1 = vc.ISAVAILABLE;

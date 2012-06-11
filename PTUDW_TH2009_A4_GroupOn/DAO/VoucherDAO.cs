@@ -11,6 +11,18 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class VoucherDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
+        public VoucherDTO SelectVoucher_MaVoucher(int mavoucher)
+        {
+            List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
+            List<Voucher> listV = data.sp_VoucherXemMaVoucher(mavoucher).ToList();
+            foreach (Voucher v in listV)
+            {
+                VoucherDTO voucherDto = new VoucherDTO(v);
+                lstVoucherDto.Add(voucherDto);
+            }
+            return lstVoucherDto[0];
+        }
+
         public  List<VoucherDTO> SelectAllVoucher()
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
@@ -37,7 +49,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         public  List<VoucherDTO> SelectVoucher_DoanhNghiep(int madn)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
-            List<Voucher> listV = (List<Voucher>)data.sp_VoucherXemDN(madn);
+            List<Voucher> listV = data.sp_VoucherXemDN(madn).ToList();
             foreach (Voucher v in listV)
             {
                 VoucherDTO voucherDto = new VoucherDTO(v);
@@ -49,7 +61,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         public  List<VoucherDTO> SelectVoucher_KhuVuc(int kv)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
-            List<Voucher> listV = (List<Voucher>)data.sp_VoucherXemKhuVuc(kv);
+            List<Voucher> listV = data.sp_VoucherXemKhuVuc(kv).ToList();
             foreach (Voucher v in listV)
             {
                 VoucherDTO voucherDto = new VoucherDTO(v);
@@ -61,7 +73,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         public  List<VoucherDTO> SelectVoucher_Loai(int loai)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
-            List<Voucher> listV = (List<Voucher>)data.sp_VoucherXemloai(loai);
+            List<Voucher> listV = data.sp_VoucherXemloai(loai).ToList();
             foreach (Voucher v in listV)
             {
                 VoucherDTO voucherDto = new VoucherDTO(v);
@@ -70,10 +82,10 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public  List<VoucherDTO> SelectVoucher_Loai(int loai, int khuvuc)
+        public  List<VoucherDTO> SelectVoucher_Loai_KhuVuc(int loai, int khuvuc)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
-            List<Voucher> listV = (List<Voucher>)data.sp_VoucherXemloaiKV(loai, khuvuc);
+            List<Voucher> listV = data.sp_VoucherXemloaiKV(loai, khuvuc).ToList();
             foreach (Voucher v in listV)
             {
                 VoucherDTO voucherDto = new VoucherDTO(v);

@@ -13,7 +13,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<DiaChiDoanhNghiepDTO> listDNDTO = new List<DiaChiDoanhNghiepDTO>();
 
-            List<DiaChiDoanhNghiep> listDN = (List<DiaChiDoanhNghiep>)data.sp_DiaChiDoanhNghiepXem();
+            List<DiaChiDoanhNghiep> listDN = data.sp_DiaChiDoanhNghiepXem().ToList();
             foreach (DiaChiDoanhNghiep dc in listDN)
             {
                 DiaChiDoanhNghiepDTO dndto = new DiaChiDoanhNghiepDTO(dc);
