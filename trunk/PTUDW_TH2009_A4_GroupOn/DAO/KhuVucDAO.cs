@@ -13,7 +13,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<KhuVucDTO> listKVDTO = new List<KhuVucDTO>();
 
-            List<KhuVuc> listKV = (List<KhuVuc>)data.sp_KhuVucXem();
+            List<KhuVuc> listKV = data.sp_KhuVucXem().ToList();
             foreach (KhuVuc dh in listKV)
             {
                 KhuVucDTO dhdto = new KhuVucDTO(dh);

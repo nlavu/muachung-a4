@@ -34,7 +34,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         public  List<ChiTietDonHangDTO> SelectAllChiTietDonHang()
         {
             List<ChiTietDonHangDTO> lstChiTietonHangDto = new List<ChiTietDonHangDTO>();
-            List<ChiTietDonHang> listCTDH = (List<ChiTietDonHang>)data.sp_ChiTietDonHangXem();
+            List<ChiTietDonHang> listCTDH = data.sp_ChiTietDonHangXem().ToList();
             foreach (ChiTietDonHang ctdh in listCTDH)
             {
                 ChiTietDonHangDTO chitietdonhangDto = new ChiTietDonHangDTO(ctdh);
@@ -46,7 +46,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         public  List<ChiTietDonHangDTO> SelectChiTietDonHang_MaDH(int madh)
         {
             List<ChiTietDonHangDTO> lstChiTietonHangDto = new List<ChiTietDonHangDTO>();
-            List<ChiTietDonHang> listCTDH = (List<ChiTietDonHang>)data.sp_ChiTietDonHangXemMDH(madh);
+            List<ChiTietDonHang> listCTDH = data.sp_ChiTietDonHangXemMDH(madh).ToList();
             foreach (ChiTietDonHang ctdh in listCTDH)
             {
                 ChiTietDonHangDTO chitietdonhangDto = new ChiTietDonHangDTO(ctdh);

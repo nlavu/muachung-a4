@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MuaChung" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=MuaChung;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MuaChungConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChiTietDonHang" Member="ChiTietDonHangs">
-    <Type Name="ChiTietDonHang">
+    <Type Name="ChiTietDonHang" Id="ID1">
       <Column Name="SOLUONGMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="TRANGTHAIGIAOHANG" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="TRANGTHAISUDUNG" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
@@ -14,7 +14,7 @@
     </Type>
   </Table>
   <Table Name="dbo.Voucher" Member="Vouchers">
-    <Type Name="Voucher">
+    <Type Name="Voucher" Id="ID11">
       <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
@@ -41,7 +41,7 @@
     </Type>
   </Table>
   <Table Name="dbo.Comment" Member="Comments">
-    <Type Name="Comment">
+    <Type Name="Comment" Id="ID2">
       <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
       <Column Name="THOIGIAN" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TKCOMMENT" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -51,7 +51,7 @@
     </Type>
   </Table>
   <Table Name="dbo.DiaChiDoanhNghiep" Member="DiaChiDoanhNghieps">
-    <Type Name="DiaChiDoanhNghiep">
+    <Type Name="DiaChiDoanhNghiep" Id="ID3">
       <Column Name="MADC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="DC1" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
       <Column Name="DC2" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
@@ -60,7 +60,7 @@
     </Type>
   </Table>
   <Table Name="dbo.DonHang" Member="DonHangs">
-    <Type Name="DonHang">
+    <Type Name="DonHang" Id="ID4">
       <Column Name="MADONHANG" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TONGTIEN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="NGAYMUA" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
@@ -70,12 +70,12 @@
     </Type>
   </Table>
   <Table Name="dbo.Email" Member="Emails">
-    <Type Name="Email">
+    <Type Name="Email" Id="ID5">
       <Column Name="EMAIL" Member="EMAIL1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.HinhAnh" Member="HinhAnhs">
-    <Type Name="HinhAnh">
+    <Type Name="HinhAnh" Id="ID6">
       <Column Name="MAHINHANH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="HINHDAIDIEN" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
       <Column Name="HINHTHUMBNAIL" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
@@ -86,21 +86,21 @@
     </Type>
   </Table>
   <Table Name="dbo.KhuVuc" Member="KhuVucs">
-    <Type Name="KhuVuc">
+    <Type Name="KhuVuc" Id="ID7">
       <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENKHUVUC" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Association Name="KhuVuc_Voucher" Member="Vouchers" ThisKey="MAKHUVUC" OtherKey="MAKHUVUC" Type="Voucher" />
     </Type>
   </Table>
   <Table Name="dbo.LoaiVoucher" Member="LoaiVouchers">
-    <Type Name="LoaiVoucher">
+    <Type Name="LoaiVoucher" Id="ID8">
       <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENLOAIVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Association Name="LoaiVoucher_Voucher" Member="Vouchers" ThisKey="MALOAIVOUCHER" OtherKey="MALOAIVOUCHER" Type="Voucher" />
     </Type>
   </Table>
   <Table Name="dbo.TAIKHOAN" Member="TAIKHOANs">
-    <Type Name="TAIKHOAN" Id="ID1">
+    <Type Name="TAIKHOAN" Id="ID10">
       <Column Name="USERNAME" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="PASSWORD" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="MADN" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -113,7 +113,7 @@
     </Type>
   </Table>
   <Table Name="dbo.TaiKhoanDoanhNghiep" Member="TaiKhoanDoanhNghieps">
-    <Type Name="TaiKhoanDoanhNghiep">
+    <Type Name="TaiKhoanDoanhNghiep" Id="ID9">
       <Column Name="MADN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENDN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="SDTDN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
@@ -138,66 +138,28 @@
     </Type>
   </Table>
   <Function Name="dbo.sp_ChiTietDonHangXem" Method="sp_ChiTietDonHangXem">
-    <ElementType Name="sp_ChiTietDonHangXemResult">
-      <Column Name="SOLUONGMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAIGIAOHANG" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAISUDUNG" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="LANGIAOHANGTHU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NGAYGIAOHANG" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="MADH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="VOUCHERDH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID1" />
   </Function>
   <Function Name="dbo.sp_CommentXem" Method="sp_CommentXem">
-    <ElementType Name="sp_CommentXemResult">
-      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="THOIGIAN" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="TKCOMMENT" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="MAVOUCHERCOMMENT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID2" />
   </Function>
   <Function Name="dbo.sp_DiaChiDoanhNghiepXem" Method="sp_DiaChiDoanhNghiepXem">
-    <ElementType Name="sp_DiaChiDoanhNghiepXemResult">
-      <Column Name="MADC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DC1" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="DC2" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="DC3" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-    </ElementType>
+    <ElementType IdRef="ID3" />
   </Function>
   <Function Name="dbo.sp_DonHangXem" Method="sp_DonHangXem">
-    <ElementType Name="sp_DonHangXemResult">
-      <Column Name="MADONHANG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TONGTIEN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NGAYMUA" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="TKUSERNAME" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID4" />
   </Function>
   <Function Name="dbo.sp_EmailXem" Method="sp_EmailXem">
-    <ElementType Name="sp_EmailXemResult">
-      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-    </ElementType>
+    <ElementType IdRef="ID5" />
   </Function>
   <Function Name="dbo.sp_HinhAnhXem" Method="sp_HinhAnhXem">
-    <ElementType Name="sp_HinhAnhXemResult">
-      <Column Name="MAHINHANH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="HINHDAIDIEN" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="HINHTHUMBNAIL" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="HINH1" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="HINH2" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="HINH3" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID6" />
   </Function>
   <Function Name="dbo.sp_KhuVucXem" Method="sp_KhuVucXem">
-    <ElementType Name="sp_KhuVucXemResult">
-      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TENKHUVUC" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID7" />
   </Function>
   <Function Name="dbo.sp_LoaiVoucherXem" Method="sp_LoaiVoucherXem">
-    <ElementType Name="sp_LoaiVoucherXemResult">
-      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TENLOAIVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID8" />
   </Function>
   <Function Name="dbo.sp_TaiKhoanXem" Method="sp_TaiKhoanXem">
     <ElementType Name="sp_TaiKhoanXemResult">
@@ -209,17 +171,7 @@
     </ElementType>
   </Function>
   <Function Name="dbo.sp_TaiKhoanDoanhNghiepXem" Method="sp_TaiKhoanDoanhNghiepXem">
-    <ElementType Name="sp_TaiKhoanDoanhNghiepXemResult">
-      <Column Name="MADN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TENDN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="SDTDN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="GIOITHIEU" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="WEBSITE" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="KINHDO" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="VIDO" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="MADIACHIDN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID9" />
   </Function>
   <Function Name="dbo.sp_TaiKhoanThuongXem" Method="sp_TaiKhoanThuongXem">
     <ElementType Name="sp_TaiKhoanThuongXemResult">
@@ -231,126 +183,36 @@
   </Function>
   <Function Name="dbo.sp_ChiTietDonHangXemMDH" Method="sp_ChiTietDonHangXemMDH">
     <Parameter Name="madhInput" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_ChiTietDonHangXemMDHResult">
-      <Column Name="SOLUONGMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAIGIAOHANG" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAISUDUNG" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="LANGIAOHANGTHU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NGAYGIAOHANG" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="MADH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="VOUCHERDH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID1" />
   </Function>
   <Function Name="dbo.sp_CommentXemVoucher" Method="sp_CommentXemVoucher">
     <Parameter Name="maVoucherInput" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_CommentXemVoucherResult">
-      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="THOIGIAN" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="TKCOMMENT" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="MAVOUCHERCOMMENT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID2" />
   </Function>
   <Function Name="dbo.sp_DonHangXemUser" Method="sp_DonHangXemUser">
     <Parameter Name="userInput" Type="System.String" DbType="NVarChar(100)" />
-    <ElementType Name="sp_DonHangXemUserResult">
-      <Column Name="MADONHANG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TONGTIEN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NGAYMUA" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="TKUSERNAME" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID4" />
   </Function>
   <Function Name="dbo.sp_TaiKhoanXemUser" Method="sp_TaiKhoanXemUser">
     <Parameter Name="userIn" Type="System.String" DbType="NVarChar(100)" />
-    <ElementType IdRef="ID1" />
+    <ElementType IdRef="ID10" />
   </Function>
   <Function Name="dbo.sp_VoucherXemDN" Method="sp_VoucherXemDN">
     <Parameter Name="dnInput" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_VoucherXemDNResult">
-      <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANKTKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="GIAGOC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="GIAKHUYENMAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGTRONGKHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGDAMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="THUOCTINHVIP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TONGSOGIOBAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAIDUYET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAHINH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MADOANHNGHIEP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID11" />
   </Function>
   <Function Name="dbo.sp_VoucherXemKhuVuc" Method="sp_VoucherXemKhuVuc">
     <Parameter Name="kvInput" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_VoucherXemKhuVucResult">
-      <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANKTKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="GIAGOC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="GIAKHUYENMAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGTRONGKHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGDAMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="THUOCTINHVIP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TONGSOGIOBAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAIDUYET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAHINH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MADOANHNGHIEP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID11" />
   </Function>
   <Function Name="dbo.sp_VoucherXemloai" Method="sp_VoucherXemloai">
     <Parameter Name="typeInput" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_VoucherXemloaiResult">
-      <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANKTKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="GIAGOC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="GIAKHUYENMAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGTRONGKHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGDAMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="THUOCTINHVIP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TONGSOGIOBAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAIDUYET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAHINH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MADOANHNGHIEP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID11" />
   </Function>
   <Function Name="dbo.sp_VoucherXemloaiKV" Method="sp_VoucherXemloaiKV">
     <Parameter Name="typeInput" Type="System.Int32" DbType="Int" />
     <Parameter Name="kvInput" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_VoucherXemloaiKVResult">
-      <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANKTKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="GIAGOC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="GIAKHUYENMAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGTRONGKHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGDAMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="THUOCTINHVIP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TONGSOGIOBAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAIDUYET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAHINH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MADOANHNGHIEP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID11" />
   </Function>
   <Function Name="dbo.sp_ins_ctdh" Method="sp_ins_ctdh">
     <Parameter Name="sl" Type="System.Int32" DbType="Int" />
@@ -626,25 +488,7 @@
   </Function>
   <Function Name="dbo.sp_VoucherXemMaVoucher" Method="sp_VoucherXemMaVoucher">
     <Parameter Name="maInput" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_VoucherXemMaVoucherResult">
-      <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="THOIGIANKTKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="GIAGOC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="GIAKHUYENMAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGTRONGKHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="SOLUONGDAMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="THUOCTINHVIP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TONGSOGIOBAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TRANGTHAIDUYET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAHINH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MADOANHNGHIEP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
+    <ElementType IdRef="ID11" />
   </Function>
   <Function Name="dbo.sp_count_soluongdamua" Method="sp_count_soluongdamua">
     <Parameter Name="madh" Type="System.Int32" DbType="Int" />

@@ -13,7 +13,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<LoaiVoucherDTO> listLKVDTO = new List<LoaiVoucherDTO>();
 
-            List<LoaiVoucher> listLKV = (List<LoaiVoucher>)data.sp_LoaiVoucherXem();
+            List<LoaiVoucher> listLKV = data.sp_LoaiVoucherXem().ToList();
             foreach (LoaiVoucher dh in listLKV)
             {
                 LoaiVoucherDTO dhdto = new LoaiVoucherDTO(dh);
@@ -28,7 +28,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             int kq = 0;
 
             try {
-                data.sp_ins_loaivoucher(vc.MALOAIVOUCHER1, vc.TENKHUVUC1);
+                data.sp_ins_loaivoucher(vc.MALOAIVOUCHER1, vc.TENLOAIVOUCHER1);
                 data.SubmitChanges();
                 kq = 1;
             }
@@ -58,7 +58,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
 
             try
             {
-                data.sp_update_loaivoucher(vc.MALOAIVOUCHER1, vc.TENKHUVUC1);
+                data.sp_update_loaivoucher(vc.MALOAIVOUCHER1, vc.TENLOAIVOUCHER1);
                 data.SubmitChanges();
                 kq = 1;
             }

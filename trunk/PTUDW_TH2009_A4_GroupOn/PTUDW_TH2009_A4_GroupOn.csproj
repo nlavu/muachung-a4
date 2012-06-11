@@ -134,6 +134,8 @@
     <Content Include="css\style.css" />
     <Content Include="DoanhNghiep\ThemDeal.aspx" />
     <Content Include="DoanhNghiep\UpdateDeal.aspx" />
+    <Content Include="DoanhNghiep\TrangChuDoanhNghiep.aspx" />
+    <Content Include="DoanhNghiep\ChiTietDeal.aspx" />
     <Content Include="DoanhNghiep\XoaDeal.aspx" />
     <Content Include="images\804787776logo nho%282%29.JPG" />
     <Content Include="images\background2.jpg" />
@@ -313,7 +315,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="DNDangNhap.aspx" />
+    <Content Include="DoanhNghiep\DNDangNhap.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -440,6 +442,20 @@
     <Compile Include="DoanhNghiep\UpdateDeal.aspx.designer.cs">
       <DependentUpon>UpdateDeal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DoanhNghiep\TrangChuDoanhNghiep.aspx.cs">
+      <DependentUpon>TrangChuDoanhNghiep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\TrangChuDoanhNghiep.aspx.designer.cs">
+      <DependentUpon>TrangChuDoanhNghiep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhNghiep\ChiTietDeal.aspx.cs">
+      <DependentUpon>ChiTietDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\ChiTietDeal.aspx.designer.cs">
+      <DependentUpon>ChiTietDeal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DoanhNghiep\XoaDeal.aspx.cs">
       <DependentUpon>XoaDeal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -538,11 +554,11 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="DNDangNhap.aspx.cs">
+    <Compile Include="DoanhNghiep\DNDangNhap.aspx.cs">
       <DependentUpon>DNDangNhap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DNDangNhap.aspx.designer.cs">
+    <Compile Include="DoanhNghiep\DNDangNhap.aspx.designer.cs">
       <DependentUpon>DNDangNhap.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -585,7 +601,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>6063</DevelopmentServerPort>
+          <DevelopmentServerPort>5169</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

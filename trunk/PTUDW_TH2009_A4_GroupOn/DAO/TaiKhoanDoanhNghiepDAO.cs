@@ -13,7 +13,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<TaiKhoanDoanhNghiepDTO> listTKDTO = new List<TaiKhoanDoanhNghiepDTO>();
 
-            List<TaiKhoanDoanhNghiep> listTK = (List<TaiKhoanDoanhNghiep>)data.sp_TaiKhoanDoanhNghiepXem();
+            List<TaiKhoanDoanhNghiep> listTK = data.sp_TaiKhoanDoanhNghiepXem().ToList();
             foreach (TaiKhoanDoanhNghiep dh in listTK)
             {
                 TaiKhoanDoanhNghiepDTO dhdto = new TaiKhoanDoanhNghiepDTO(dh);

@@ -13,7 +13,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<DonHangDTO> listDHDTO = new List<DonHangDTO>();
 
-            List<DonHang> listDH = (List<DonHang>)data.sp_DonHangXem();
+            List<DonHang> listDH = data.sp_DonHangXem().ToList();
             foreach (DonHang dh in listDH)
             {
                 DonHangDTO dhdto = new DonHangDTO(dh);
@@ -27,7 +27,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
         {
             List<DonHangDTO> listDHDTO = new List<DonHangDTO>();
 
-            List<DonHang> listDH = (List<DonHang>)data.sp_DonHangXemUser(username);
+            List<DonHang> listDH = data.sp_DonHangXemUser(username).ToList();
             foreach (DonHang dh in listDH)
             {
                 DonHangDTO dhdto = new DonHangDTO(dh);
