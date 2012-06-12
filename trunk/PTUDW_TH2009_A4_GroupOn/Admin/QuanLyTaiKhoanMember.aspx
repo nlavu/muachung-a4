@@ -17,9 +17,9 @@
                 SortExpression="USERNAME" />
             <asp:BoundField DataField="PASSWORD" HeaderText="PASSWORD" 
                 SortExpression="PASSWORD" />
+            <asp:BoundField DataField="MAKH" HeaderText="MAKH" SortExpression="MAKH" />
             <asp:BoundField DataField="TKISAVAILABLE" HeaderText="TKISAVAILABLE" 
                 SortExpression="TKISAVAILABLE" />
-            <asp:BoundField DataField="MAKH" HeaderText="MAKH" SortExpression="MAKH" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

@@ -20,6 +20,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
             SDT = tk.SDT;
         }
 
+        public TaiKhoanThuongDTO()
+        {
+            // TODO: Complete member initialization
+        }
+
         public int MAKH1
         {
             get { return MAKH; }

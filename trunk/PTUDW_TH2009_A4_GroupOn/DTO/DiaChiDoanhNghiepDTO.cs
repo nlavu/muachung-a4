@@ -20,6 +20,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
             DC3 = dc.DC3;
         }
 
+        public DiaChiDoanhNghiepDTO()
+        {
+            // TODO: Complete member initialization
+        }
+
         public int MADC1
         {
             get { return MADC; }

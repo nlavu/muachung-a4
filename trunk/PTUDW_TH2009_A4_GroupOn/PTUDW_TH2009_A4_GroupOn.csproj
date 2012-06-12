@@ -114,6 +114,9 @@
     <Content Include="Admin\SiteConfig.aspx" />
     <Content Include="Admin\QuanLyDoanhNghiep.aspx" />
     <Content Include="Admin\QuanLyTaiKhoanMember.aspx" />
+    <Content Include="Admin\ThemDoanhNghiep.aspx" />
+    <Content Include="Admin\ThemKhachHang.aspx" />
+    <Content Include="Admin\QuanLyTaiKhoanDN.aspx" />
     <Content Include="css\change-city.css" />
     <Content Include="css\default.css" />
     <Content Include="css\du-lich.css" />
@@ -418,6 +421,27 @@
     </Compile>
     <Compile Include="Admin\QuanLyTaiKhoanMember.aspx.designer.cs">
       <DependentUpon>QuanLyTaiKhoanMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThemDoanhNghiep.aspx.cs">
+      <DependentUpon>ThemDoanhNghiep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThemDoanhNghiep.aspx.designer.cs">
+      <DependentUpon>ThemDoanhNghiep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThemKhachHang.aspx.cs">
+      <DependentUpon>ThemKhachHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThemKhachHang.aspx.designer.cs">
+      <DependentUpon>ThemKhachHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuanLyTaiKhoanDN.aspx.cs">
+      <DependentUpon>QuanLyTaiKhoanDN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuanLyTaiKhoanDN.aspx.designer.cs">
+      <DependentUpon>QuanLyTaiKhoanDN.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAO\ChiTietDonHangDAO.cs" />
     <Compile Include="DAO\CommentDAO.cs" />
