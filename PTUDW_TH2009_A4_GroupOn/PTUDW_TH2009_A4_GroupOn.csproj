@@ -112,6 +112,8 @@
     <Content Include="Admin\ManageCompany.aspx" />
     <Content Include="Admin\images\red.png" />
     <Content Include="Admin\SiteConfig.aspx" />
+    <Content Include="Admin\QuanLyDoanhNghiep.aspx" />
+    <Content Include="Admin\QuanLyTaiKhoanMember.aspx" />
     <Content Include="css\change-city.css" />
     <Content Include="css\default.css" />
     <Content Include="css\du-lich.css" />
@@ -402,6 +404,20 @@
     </Compile>
     <Compile Include="Admin\SiteConfig.aspx.designer.cs">
       <DependentUpon>SiteConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuanLyDoanhNghiep.aspx.cs">
+      <DependentUpon>QuanLyDoanhNghiep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuanLyDoanhNghiep.aspx.designer.cs">
+      <DependentUpon>QuanLyDoanhNghiep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuanLyTaiKhoanMember.aspx.cs">
+      <DependentUpon>QuanLyTaiKhoanMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuanLyTaiKhoanMember.aspx.designer.cs">
+      <DependentUpon>QuanLyTaiKhoanMember.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAO\ChiTietDonHangDAO.cs" />
     <Compile Include="DAO\CommentDAO.cs" />

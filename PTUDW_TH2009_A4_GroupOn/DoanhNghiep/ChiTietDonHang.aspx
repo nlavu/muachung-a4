@@ -2,13 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="Nhập mã đơn hàng cần tìm:"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="Nhập tên voucher cần tìm"></asp:Label>
 &nbsp;
     <asp:DropDownList ID="ddlVoucherList" runat="server" 
         AppendDataBoundItems="True" AutoPostBack="True">
     </asp:DropDownList>
 &nbsp;
     <br />
+    <br />
+    <asp:Label ID="Label2" runat="server" 
+        Text="Chi tiết các đơn hàng của voucher vừa chọn"></asp:Label>
     <br />
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
         CellPadding="4" DataKeyNames="LANGIAOHANGTHU,MADH,VOUCHERDH" 
