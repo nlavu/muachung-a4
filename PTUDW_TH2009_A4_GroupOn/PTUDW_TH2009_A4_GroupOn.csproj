@@ -136,6 +136,7 @@
     <Content Include="DoanhNghiep\UpdateDeal.aspx" />
     <Content Include="DoanhNghiep\TrangChuDoanhNghiep.aspx" />
     <Content Include="DoanhNghiep\ChiTietDeal.aspx" />
+    <Content Include="DoanhNghiep\ChiTietDonHang.aspx" />
     <Content Include="DoanhNghiep\XoaDeal.aspx" />
     <Content Include="images\804787776logo nho%282%29.JPG" />
     <Content Include="images\background2.jpg" />
@@ -455,6 +456,13 @@
     </Compile>
     <Compile Include="DoanhNghiep\ChiTietDeal.aspx.designer.cs">
       <DependentUpon>ChiTietDeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhNghiep\ChiTietDonHang.aspx.cs">
+      <DependentUpon>ChiTietDonHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\ChiTietDonHang.aspx.designer.cs">
+      <DependentUpon>ChiTietDonHang.aspx</DependentUpon>
     </Compile>
     <Compile Include="DoanhNghiep\XoaDeal.aspx.cs">
       <DependentUpon>XoaDeal.aspx</DependentUpon>
