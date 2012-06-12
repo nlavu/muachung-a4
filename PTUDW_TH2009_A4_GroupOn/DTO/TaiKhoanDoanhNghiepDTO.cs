@@ -30,6 +30,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
             MADIACHIDN = tk.MADIACHIDN;
         }
 
+        public TaiKhoanDoanhNghiepDTO()
+        {
+            // TODO: Complete member initialization
+        }
+
         public int MADN1
         {
             get { return MADN; }
