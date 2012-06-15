@@ -10,7 +10,7 @@
 namespace PTUDW_TH2009_A4_GroupOn {
     
     
-    public partial class _Default {
+    public partial class ListProduct {
         
         /// <summary>
         /// ltrSanPham control.

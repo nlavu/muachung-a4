@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using PTUDW_TH2009_A4_GroupOn.DTO;
 using PTUDW_TH2009_A4_GroupOn.DAO;
+using PTUDW_TH2009_A4_GroupOn.BUS;
 
 namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
 {
@@ -20,7 +21,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
         {
             int ma = Int32.Parse(TextBox1.Text);
             VoucherDAO v = new VoucherDAO();
-            v.DeleteVoucher_MaVoucher(ma);
+            VoucherBUS.DeleteVoucher_MaVoucher(ma);
         }
 
         protected void ButtonXem_Click(object sender, EventArgs e)

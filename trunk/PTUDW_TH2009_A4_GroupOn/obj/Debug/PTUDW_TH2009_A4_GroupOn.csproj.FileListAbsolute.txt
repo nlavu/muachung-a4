@@ -23,3 +23,8 @@ D:\Nam 4\Web\Do An\Source Code\Sync Project\PTUDW_TH2009_A4_GroupOn\bin\PTUDW_TH
 D:\Nam 4\Web\Do An\Source Code\Sync Project\PTUDW_TH2009_A4_GroupOn\bin\PTUDW_TH2009_A4_GroupOn.pdb
 D:\Nam 4\Web\Do An\Source Code\Sync Project\PTUDW_TH2009_A4_GroupOn\obj\Debug\PTUDW_TH2009_A4_GroupOn.dll
 D:\Nam 4\Web\Do An\Source Code\Sync Project\PTUDW_TH2009_A4_GroupOn\obj\Debug\PTUDW_TH2009_A4_GroupOn.pdb
+d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\bin\PTUDW_TH2009_A4_GroupOn.dll
+d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\bin\PTUDW_TH2009_A4_GroupOn.pdb
+d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\obj\Debug\ResolveAssemblyReference.cache
+d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\obj\Debug\PTUDW_TH2009_A4_GroupOn.dll
+d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\obj\Debug\PTUDW_TH2009_A4_GroupOn.pdb

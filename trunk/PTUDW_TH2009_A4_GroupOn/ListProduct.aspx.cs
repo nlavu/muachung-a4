@@ -4,17 +4,26 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PTUDW_TH2009_A4_GroupOn.DAO;
 using PTUDW_TH2009_A4_GroupOn.DTO;
 using PTUDW_TH2009_A4_GroupOn.BUS;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace PTUDW_TH2009_A4_GroupOn
 {
-    public partial class _Default : System.Web.UI.Page
+    public partial class ListProduct : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.QueryString["id"] == null)
+            {
+                Response.Redirect("Default.aspx");
+            }
             ltrSanPham.Text = LoadProduct();
-            ltrShowProduct.Text = LoadListProduct();
+            ltrShowProduct.Text = loadListProduct();
+
         }
 
         protected string LoadProduct()
@@ -25,13 +34,13 @@ namespace PTUDW_TH2009_A4_GroupOn
 
                 string result = "";
 
-                foreach(LoaiVoucherDTO i_item in lstVoucher)
+                foreach (LoaiVoucherDTO i_item in lstVoucher)
                 {
                     int maloai = i_item.MALOAIVOUCHER1;
                     int i_voucher = 0;
 
-                    i_voucher =  LoaiVoucherBUS.LaySoLuongVoucherTheoLoai(maloai);
-                    result += "<div class='linkdmsp'><a href='ListProduct.aspx?id="+i_item.MALOAIVOUCHER1+@"'> " + i_item.TENLOAIVOUCHER1.ToString() + " <span class='orange'>(" + i_voucher.ToString() + ")</span></a></div>";
+                    i_voucher = LoaiVoucherBUS.LaySoLuongVoucherTheoLoai(maloai);
+                    result += "<div class='linkdmsp'><a href='ListProduct.aspx'> " + i_item.TENLOAIVOUCHER1.ToString() + " <span class='orange'>(" + i_voucher.ToString() + ")</span></a></div>";
                 }
                 return result;
             }
@@ -42,20 +51,20 @@ namespace PTUDW_TH2009_A4_GroupOn
             }
         }
 
-        protected String LoadListProduct()
+        protected string loadListProduct()
         {
-            String result = "";
-            List<LoaiVoucherDTO> lstLoaiVoucher = LoaiVoucherBUS.LayDanhSachLoaiVoucher();
-            int i = 0;
-            foreach (LoaiVoucherDTO i_LoaiVoucher in lstLoaiVoucher)
+            string result = "";
+            int maLoaiVoucher = int.Parse(Request.QueryString["id"].ToString());
+
+            if (maLoaiVoucher != 0)
             {
                 result += @"
                     <div class='title_new'>
-                        <h2>"+i_LoaiVoucher.TENLOAIVOUCHER1.ToString() +@"</h2>
+                        <h2>Loai voucher</h2>
                     </div>
                     <div class='clear h_15'></div>";
-                int i_maLoai = i_LoaiVoucher.MALOAIVOUCHER1;
-                List<VoucherDTO> lstVoucher = VoucherBUS.SelectTop6TheoMaLoai(i_maLoai);
+                List<VoucherDTO> lstVoucher = VoucherBUS.SelectVoucher_Loai(maLoaiVoucher);
+                int i = 0;
                 int i_checkPosition = 0;
                 foreach (VoucherDTO i_Vocher in lstVoucher)
                 {
@@ -135,15 +144,14 @@ namespace PTUDW_TH2009_A4_GroupOn
     <div id='dialog"+i.ToString()+@"' title='Bản đồ' style='display:none !important;z-index:99999999 !important'>
 		<p><img src='images/bando/1029248795Nội thất Kiến Xinh.png'/></p>
 	</div>";
-                    if(i_checkPosition == 3)
+                    if(i_checkPosition%3 == 0)
                     {
                         result += "<div class='clear h_15'></div>";
                     }
                 }
-                result += @"<div style='clear: both'></div>
-                            <div class='clear h_15'></div> ";
             }
             return result;
-        }
+            }
+
     }
 }

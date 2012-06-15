@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using PTUDW_TH2009_A4_GroupOn.DTO;
 using PTUDW_TH2009_A4_GroupOn.DAO;
+using PTUDW_TH2009_A4_GroupOn.BUS;
 
 namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
 {
@@ -16,7 +17,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
             if (!Page.IsPostBack)
             {
                 VoucherDAO voucher = new VoucherDAO();
-                List<VoucherDTO> arrDeal = (List<VoucherDTO>)voucher.SelectVoucher_DoanhNghiep(int.Parse(Session["MaDN"].ToString()));
+                List<VoucherDTO> arrDeal = (List<VoucherDTO>)VoucherBUS.SelectVoucher_DoanhNghiep(int.Parse(Session["MaDN"].ToString()));
 
                 RepeaterDSDealDN.DataSource = arrDeal.ToList();
                 RepeaterDSDealDN.DataBind();
