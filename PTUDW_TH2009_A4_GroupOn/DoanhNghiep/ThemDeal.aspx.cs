@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using PTUDW_TH2009_A4_GroupOn.DTO;
 using PTUDW_TH2009_A4_GroupOn.DAO;
+using PTUDW_TH2009_A4_GroupOn.BUS;
 
 namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
 {
@@ -37,7 +38,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
             v.MADOANHNGHIEP1 = Int32.Parse(TextBoxDN.Text);
             v.ISAVAILABLE1 = 0;
             VoucherDAO vDAO = new VoucherDAO();
-            vDAO.InsertVoucher(v);
+            VoucherBUS.InsertVoucher(v);
         }
     }
 }

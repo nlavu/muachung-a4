@@ -19,7 +19,6 @@ body { font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#444; tex
 
 
 
-
 /*---------------------------- */
 .contentBoxNew {
 padding: 12px;
@@ -463,6 +462,40 @@ right: 5px;
 .dealpc { width:82px; height:39px; background:url(../images/bg-sales1.png) no-repeat; float:right; color:white; font-size:18px; font-weight:bold; position:absolute; margin:-4px 0 0 199px;}
 .showdealpc { margin-top: 10px; text-align: center; width: 82px;}
 .dealtime { margin:10px 0 0 0 ; font-size:11px; font-weight:bold; color:#06F;}
+.price{ padding:5px; float:left;}
+.new_price a {
+	border-right: 1px dotted #444444;
+    color: #EE9313;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 9px 0;
+    padding: 0 0 0 2px;
+    width: 110px;
+	text-align: center;
+}
+.old_price a{
+	text-decoration: line-through;
+	border-right: 1px dotted #444444;
+    color: #666666;
+	float:left;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 10px 0 9px 0;
+    padding: 0 0 0 2px;
+    width: 110px;
+	text-align: center;
+}
+h1 {
+    color: #444444;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 35px 0 9px 0;
+    padding: 0 0 0 15px;
+    width: auto;
+	text-align: center;
+}
 .xem-bt a{ width:125px; height:50px; background:url(../images/xem-bt.png) no-repeat; display:block; position:absolute; bottom:5px; left:5px;}
 .xem-bt a:hover { cursor:pointer;}
 
@@ -474,10 +507,10 @@ right: 5px;
 .boxcountry { width:690px; float:left; border-bottom:1px dashed #ccc; padding:0px 0 10px 0;}
 .boxdmsp { width:690px; float:left; padding:10px 0 0 0;}
 
-.quanhuyen { float:left; padding:1px 20px 1px 0px; width:92px;}
+.quanhuyen { float:left; padding:1px 20px 1px 0px; width:165px; text-align: center;}
 .quanhuyen-tt  {width:100px; height:px; background: url(../images/icon-arrow.png) 0px 5px no-repeat; float:left; padding:3px 3px 3px 20px; font-weight:bold; margin:0 0 0 0px; text-shadow:1px 1px 0px white; color:#333; font-size:15px;}
 .wrapquanhuyen { width:560px; float:right;}
-.quanhuyen a { font-size:11px;}
+.quanhuyen a { font-size:20px;}
 
 .danhmucsp { width:100px; height:20px; background: url(../images/icon-arrow.png) 0px 5px no-repeat; float:left; padding:0px 3px 0px 20px; font-weight:bold;  text-shadow:1px 1px 0px white; color:#333; font-size:15px;}
 .wraplinkdmsp { width:560px; float:right;}

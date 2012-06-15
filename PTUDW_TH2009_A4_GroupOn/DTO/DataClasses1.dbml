@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MuaChung" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=MuaChung;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MuaChungConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=BEHIEN-PC;Initial Catalog=MuaChung;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MuaChungConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChiTietDonHang" Member="ChiTietDonHangs">
     <Type Name="ChiTietDonHang" Id="ID1">
       <Column Name="SOLUONGMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -500,5 +500,53 @@
     <Parameter Name="sl" Type="System.Int32" DbType="Int" />
     <Parameter Name="mavoucher" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_laysoluongvouchertheoloai" Method="sp_laysoluongvouchertheoloai">
+    <Parameter Name="maloai" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Top6VoucherTheoMa" Method="sp_Top6VoucherTheoMa">
+    <Parameter Name="maloai" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Top6VoucherTheoMaResult">
+      <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="THOIGIANKTKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="GIAGOC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GIAKHUYENMAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SOLUONGTRONGKHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SOLUONGDAMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="THUOCTINHVIP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TONGSOGIOBAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TRANGTHAIDUYET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MAHINH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MADOANHNGHIEP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Top6VoucherTheoMaLoai" Method="sp_Top6VoucherTheoMaLoai">
+    <Parameter Name="maloai" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Top6VoucherTheoMaLoaiResult">
+      <Column Name="MAVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TENVOUCHER" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="THOIGIANBDKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="THOIGIANKTKM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NOIDUNG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="GIAGOC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GIAKHUYENMAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SOLUONGTRONGKHO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SOLUONGDAMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="THUOCTINHVIP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TONGSOGIOBAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TRANGTHAIDUYET" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MAHINH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MALOAIVOUCHER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MAKHUVUC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MADOANHNGHIEP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ISAVAILABLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
   </Function>
 </Database>

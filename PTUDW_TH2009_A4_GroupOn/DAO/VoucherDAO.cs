@@ -11,7 +11,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
     public class VoucherDAO
     {
         private static DataClasses1DataContext data = new DataClasses1DataContext();
-        public VoucherDTO SelectVoucher_MaVoucher(int mavoucher)
+        public static VoucherDTO SelectVoucher_MaVoucher(int mavoucher)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = data.sp_VoucherXemMaVoucher(mavoucher).ToList();
@@ -23,7 +23,19 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto[0];
         }
 
-        public  List<VoucherDTO> SelectAllVoucher()
+        public static List<VoucherDTO> SelectTop6TheoMaLoai(int maloai)
+        {
+            List<VoucherDTO> lstTop6VoucherDto = new List<VoucherDTO>();
+            List<Voucher> list = data.sp_Top6VoucherTheoMaLoai(maloai).ToList();
+            foreach (Voucher vc in list)
+            {
+                VoucherDTO voucherDto = new VoucherDTO(vc);
+                lstTop6VoucherDto.Add(voucherDto);
+            }
+            return lstTop6VoucherDto;
+        }
+
+        public static  List<VoucherDTO> SelectAllVoucher()
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             try
@@ -46,7 +58,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public  List<VoucherDTO> SelectVoucher_DoanhNghiep(int madn)
+        public static List<VoucherDTO> SelectVoucher_DoanhNghiep(int madn)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = data.sp_VoucherXemDN(madn).ToList();
@@ -58,7 +70,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public  List<VoucherDTO> SelectVoucher_KhuVuc(int kv)
+        public static List<VoucherDTO> SelectVoucher_KhuVuc(int kv)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = data.sp_VoucherXemKhuVuc(kv).ToList();
@@ -70,7 +82,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public  List<VoucherDTO> SelectVoucher_Loai(int loai)
+        public static List<VoucherDTO> SelectVoucher_Loai(int loai)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = data.sp_VoucherXemloai(loai).ToList();
@@ -82,7 +94,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public  List<VoucherDTO> SelectVoucher_Loai_KhuVuc(int loai, int khuvuc)
+        public static List<VoucherDTO> SelectVoucher_Loai_KhuVuc(int loai, int khuvuc)
         {
             List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
             List<Voucher> listV = data.sp_VoucherXemloaiKV(loai, khuvuc).ToList();
@@ -94,7 +106,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return lstVoucherDto;
         }
 
-        public int InsertVoucher(VoucherDTO v)
+        public static int InsertVoucher(VoucherDTO v)
         {
             int kq = 0;
 
@@ -108,7 +120,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public  int DeleteVoucher_DoanhNghiep(int madn)
+        public static int DeleteVoucher_DoanhNghiep(int madn)
         {
             int kq = 0;
 
@@ -123,7 +135,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public  int DeleteVoucher_KhuVuc(int makv)
+        public static int DeleteVoucher_KhuVuc(int makv)
         {
             int kq = 0;
 
@@ -138,7 +150,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public  int DeleteVoucher_Loai(int loai)
+        public static int DeleteVoucher_Loai(int loai)
         {
             int kq = 0;
 
@@ -153,7 +165,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public  int DeleteVoucher_MaVoucher(int ma)
+        public static int DeleteVoucher_MaVoucher(int ma)
         {
             int kq = 0;
 
@@ -168,7 +180,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public  int DeleteVoucher_NgayKetThuc(DateTime ngay)
+        public static int DeleteVoucher_NgayKetThuc(DateTime ngay)
         {
             int kq = 0;
 
@@ -183,7 +195,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public  int UpdateVoucher(VoucherDTO v)
+        public static  int UpdateVoucher(VoucherDTO v)
         {
             int kq = 0;
 
@@ -198,7 +210,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
-        public void TinhSoLuongDaMua(int madh)
+        public static void TinhSoLuongDaMua(int madh)
         {
             //ChiTietDonHangDTO ctdh = new ChiTietDonHangDTO();
             //ctdh = (ChiTietDonHangDTO)data.sp_ChiTietDonHangXemMDH(madh);

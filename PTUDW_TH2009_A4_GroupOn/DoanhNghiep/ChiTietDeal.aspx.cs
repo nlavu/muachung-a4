@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using PTUDW_TH2009_A4_GroupOn.DTO;
 using PTUDW_TH2009_A4_GroupOn.DAO;
+using PTUDW_TH2009_A4_GroupOn.BUS;
 
 namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
 {
@@ -16,8 +17,8 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
             if (!Page.IsPostBack)
             {
                 int mavoucher = int.Parse(Request.QueryString["MAVOUCHER"]);
-                VoucherDAO vDao = new VoucherDAO();
-                VoucherDTO vDto = vDao.SelectVoucher_MaVoucher(mavoucher);
+                //VoucherDAO vDao = new VoucherDAO();
+                VoucherDTO vDto = VoucherBUS.SelectVoucher_MaVoucher(mavoucher);
                 
                 txtMaVoucher.Text = vDto.MAVOUCHER1.ToString();
                 txtTenVoucher.Text = vDto.TENVOUCHER1.ToString();
@@ -47,7 +48,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
                 //load loai voucher cua voucher hien tai va cac voucher khac trong combo box
                 LoaiVoucherDAO loaiVoucherDAO = new LoaiVoucherDAO();
                 List<LoaiVoucherDTO> lstLoaiVC = new List<LoaiVoucherDTO>();
-                lstLoaiVC = loaiVoucherDAO.SelectAllLoaiVoucher();
+                lstLoaiVC = LoaiVoucherBUS.LayDanhSachLoaiVoucher();
                 ddlVoucher.DataSource = lstLoaiVC;
                 ddlVoucher.DataTextField = "TENLOAIVOUCHER1";
                 ddlVoucher.DataValueField = "MALOAIVOUCHER1";
@@ -100,7 +101,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
             vDto.MAKHUVUC1 = int.Parse(ddlKV.SelectedValue.ToString());
             vDto.MADOANHNGHIEP1 = int.Parse(ddlDN.SelectedValue.ToString());
 
-            vDao.UpdateVoucher(vDto);
+            VoucherBUS.UpdateVoucher(vDto);
         }
     }
 }

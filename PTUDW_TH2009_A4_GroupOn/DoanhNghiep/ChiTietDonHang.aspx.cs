@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using PTUDW_TH2009_A4_GroupOn.DTO;
 using PTUDW_TH2009_A4_GroupOn.DAO;
+using PTUDW_TH2009_A4_GroupOn.BUS;
 
 namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
 {
@@ -18,7 +19,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
             {
                 VoucherDAO vDAO = new VoucherDAO();
                 List<VoucherDTO> lstVoucher = new List<VoucherDTO>();
-                lstVoucher = vDAO.SelectVoucher_DoanhNghiep(madn);
+                lstVoucher = VoucherBUS.SelectVoucher_DoanhNghiep(madn);
 
                 ChiTietDonHangDAO ctDAO = new ChiTietDonHangDAO();
                 List<ChiTietDonHangDTO> lstCT= new List<ChiTietDonHangDTO>();

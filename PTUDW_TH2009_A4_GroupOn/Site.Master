@@ -29,6 +29,9 @@
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.countdown.js" language="javascript"></script>
 
     <script type="text/javascript">
         jQuery(document).ready(function () {
@@ -36,7 +39,16 @@
                 visible: 6
             });
         });  
-    </script>  
+    </script>
+    
+    <!--countdown-->  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // create a new date and insert it
+            var myDate = new Date(2012, 11, 15, 0, 0, 0)
+            $.countdown('#countbox', myDate);
+        });
+	</script>
 
     <!-------------accordion menu--------------> 
     <script type="text/javascript">
@@ -96,7 +108,18 @@
                 </ul>
 
                 <div class="selectcountryaaaaa">
-                    <select onChange="window.location='#'+this.value">25<option value="25" selected=selected>TP Hồ Chí Minh</option><option value="23" >TP Nha Trang</option><option value="26" >TP Hà Nội</option><option value="27" >TP Phan Thiết</option><option value="28" >TP Đà Nẵng</option><option value="48" >TP Đà Lạt</option><option value="49" >Thành phố Huế</option><option value="50" >Tỉnh Bình Định</option><option value="52" >Đảo Phú Quốc</option><option value="51" >Tp Vũng Tàu</option></select>
+                    <select onChange="window.location='#'+this.value">
+                        <option value="25" selected=selected>TP Hồ Chí Minh</option>
+                        <option value="23" >TP Nha Trang</option>
+                        <option value="26" >TP Hà Nội</option>
+                        <option value="27" >TP Phan Thiết</option>
+                        <option value="28" >TP Đà Nẵng</option>
+                        <option value="48" >TP Đà Lạt</option>
+                        <option value="49" >Thành phố Huế</option>
+                        <option value="50" >Tỉnh Bình Định</option>
+                        <option value="52" >Đảo Phú Quốc</option>
+                        <option value="51" >Tp Vũng Tàu</option>
+                    </select>
                 </div>
             </div>
         </div>
