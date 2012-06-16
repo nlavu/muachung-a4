@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MuaChung" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=MuaChung;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MuaChungConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=BEHIEN-PC;Initial Catalog=MuaChung;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MuaChungConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChiTietDonHang" Member="ChiTietDonHangs">
     <Type Name="ChiTietDonHang" Id="ID1">
       <Column Name="SOLUONGMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -553,5 +553,39 @@
     <Parameter Name="h2" Type="System.String" DbType="NVarChar(500)" />
     <Parameter Name="h3" Type="System.String" DbType="NVarChar(500)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_LayHinhAnhTheoMaHinh" Method="sp_LayHinhAnhTheoMaHinh">
+    <Parameter Name="mahinh" Type="System.Int32" DbType="Int" />
+    <ElementType IdRef="ID6" />
+  </Function>
+  <Function Name="dbo.sp_LayMaHinhAnhTheoMaVoucher" Method="sp_LayMaHinhAnhTheoMaVoucher">
+    <Parameter Name="mavoucher" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_LayMaDoanhNghiepTheoMaVoucher" Method="sp_LayMaDoanhNghiepTheoMaVoucher">
+    <Parameter Name="mavoucher" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_LayDoanhNghiepTheoMadn" Method="sp_LayDoanhNghiepTheoMadn">
+    <Parameter Name="madoanhnghiep" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_LayDoanhNghiepTheoMadnResult">
+      <Column Name="MADN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TENDN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SDTDN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="GIOITHIEU" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="WEBSITE" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="KINHDO" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="VIDO" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MADIACHIDN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MADC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DC1" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DC2" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DC3" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_SelectVoucherTheoMa" Method="sp_SelectVoucherTheoMa">
+    <Parameter Name="mavoucher" Type="System.Int32" DbType="Int" />
+    <ElementType IdRef="ID11" />
   </Function>
 </Database>

@@ -224,5 +224,15 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             data.sp_update_vouchersoluong(soluongmua, ctdh.VOUCHERDH1);
         }
 
+        public static VoucherDTO SelectVoucherTheoMa(int mavoucher)
+        {
+            Voucher item = data.sp_SelectVoucherTheoMa(mavoucher).Single();
+
+            VoucherDTO voucherDto = new VoucherDTO(item);
+
+            return voucherDto;
+        }
+
+
     }
 }

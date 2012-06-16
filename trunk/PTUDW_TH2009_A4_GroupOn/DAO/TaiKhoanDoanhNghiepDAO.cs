@@ -67,5 +67,22 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
+        public static int laymadoanhnghieptheomavoucher(int mavoucher)
+        {
+            int madoanhnghiep = 0;
+            try
+            {
+                madoanhnghiep = data.sp_LayMaDoanhNghiepTheoMaVoucher(mavoucher);
+            }
+            catch (Exception ex) { }
+            return madoanhnghiep;
+        }
+
+        public static PTUDW_TH2009_A4_GroupOn.DTO.sp_LayDoanhNghiepTheoMadnResult laydntheomadn(int madn)
+        {
+            PTUDW_TH2009_A4_GroupOn.DTO.sp_LayDoanhNghiepTheoMadnResult dn = new sp_LayDoanhNghiepTheoMadnResult();
+            dn = data.sp_LayDoanhNghiepTheoMadn(madn).Single();
+            return dn;
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace PTUDW_TH2009_A4_GroupOn
                     int i_voucher = 0;
 
                     i_voucher = LoaiVoucherBUS.LaySoLuongVoucherTheoLoai(maloai);
-                    result += "<div class='linkdmsp'><a href='ListProduct.aspx'> " + i_item.TENLOAIVOUCHER1.ToString() + " <span class='orange'>(" + i_voucher.ToString() + ")</span></a></div>";
+                    result += "<div class='linkdmsp'><a href='ListProduct.aspx?id="+i_item.MALOAIVOUCHER1.ToString()+@"'> " + i_item.TENLOAIVOUCHER1.ToString() + " <span class='orange'>(" + i_voucher.ToString() + ")</span></a></div>";
                 }
                 return result;
             }
@@ -71,6 +71,9 @@ namespace PTUDW_TH2009_A4_GroupOn
                     float newprice = i_Vocher.GIAKHUYENMAI1;
                     float oldprice = i_Vocher.GIAGOC1;
                     float percent = (newprice * 100) / oldprice;
+                    int year = i_Vocher.THOIGIANKTKM1.Year;
+                    int month = i_Vocher.THOIGIANKTKM1.Month;
+                    int day = i_Vocher.THOIGIANKTKM1.Day;
                     i_checkPosition++;
                     i++;
                     result += @"
@@ -78,8 +81,8 @@ namespace PTUDW_TH2009_A4_GroupOn
         <div class='block_content'>
             <ul>
                 <li class='ajax_block_product'>
-                    <a class='product_image' href='ProductDetail.aspx' title='#'>
-                        <img src='images/sanpham/1139559419noithat8.jpg' alt='"+ i_Vocher.TENVOUCHER1.ToString()+@"' width='290' height='184'>
+                    <a class='product_image' href='ProductDetail.aspx?id=" + i_Vocher.MAVOUCHER1+ @"'>
+                        <img src='images/sanpham/1139559419noithat8.jpg' alt='" + i_Vocher.TENVOUCHER1.ToString()+@"' width='290' height='184'>
                     </a>
                     <div class='product_info'>
                         <div class='desc'>
@@ -99,7 +102,7 @@ namespace PTUDW_TH2009_A4_GroupOn
                         </script>
                          <script type='text/javascript'>
                             $(document).ready(function () {
-                                var myDate = new Date(2012, 11, 15, 0, 0, 0)
+                                var myDate = new Date("+year+@", "+month+@", "+day+@", 0, 0, 0)
                                 $.countdown('#countbox"+i.ToString()+@"', myDate);
                             });
 	                    </script>
@@ -126,7 +129,7 @@ namespace PTUDW_TH2009_A4_GroupOn
                             div#featured-products_block_center ul li div.product_info p.buttons a {margin:6px 0 0 0;}
                         </style>
 
-                        <div class='xem-bt'><a href='ProductDetail.aspx'></a></div>
+                        <div class='xem-bt'><a href='ProductDetail.aspx?id="+i_Vocher.MAVOUCHER1+@"'></a></div>
                         <a href='ProductDetail.aspx' id='dialog_link"+i.ToString()+@"' class='orange fleft bold f16 pad_r10'>Xem địa điểm</a>
                     </div>
                 </li>
@@ -134,8 +137,8 @@ namespace PTUDW_TH2009_A4_GroupOn
             <div class='dealpc'><div class='showdealpc'> "+percent.ToString()+@"%</div></div>     
             <div class='ttdeal'><a href='#'>"+i_Vocher.TENVOUCHER1.ToString()+@"</a></div>
             <div class='price'>
-                <div class='new_price'><a href='#'>"+i_Vocher.GIAKHUYENMAI1.ToString()+@"</a></div>
-                <div class='old_price'><a href='#'>"+i_Vocher.GIAGOC1.ToString()+@"</a></div>
+                <div class='new_price'><a href='#'>"+i_Vocher.GIAKHUYENMAI1.ToString()+@"đ</a></div>
+                <div class='old_price'><a href='#'>"+i_Vocher.GIAGOC1.ToString()+@"đ</a></div>
             </div>
             <h1 id='countbox"+i.ToString()+@"'></h1>
         </div>
