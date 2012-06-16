@@ -72,11 +72,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
 
                 HinhAnhDAO haDAO = new HinhAnhDAO();
                 HinhAnhDTO haDTO = new HinhAnhDTO();
-                haDTO.HINHDAIDIEN1 = daidien;
-                haDTO.HINHTHUMBNAIL1 = thumb;
-                haDTO.HINH11 = hinh1;
-                haDTO.HINH21 = hinh2;
-                haDTO.HINH31 = hinh3;
+                haDTO.HINHDAIDIEN1 = "images/sanpham/" + FileUploadDaiDien.PostedFile.FileName;
+                haDTO.HINHTHUMBNAIL1 = "images/sanpham/" + FileUploadThumb.PostedFile.FileName;
+                haDTO.HINH11 = "images/sanpham/" + FileUploadHinh1.PostedFile.FileName;
+                haDTO.HINH21 = "images/sanpham/" + FileUploadHinh2.PostedFile.FileName;
+                haDTO.HINH31 = "images/sanpham/" + FileUploadHinh3.PostedFile.FileName;
                 haDAO.InsertHinhAnh_koma(haDTO);
             }
         }
