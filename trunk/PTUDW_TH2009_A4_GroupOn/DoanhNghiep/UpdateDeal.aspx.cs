@@ -38,7 +38,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
                 v.MAHINH1 = Int32.Parse(DropDownListHinhAnh.SelectedValue);
                 v.MALOAIVOUCHER1 = Int32.Parse(DropDownListLoaiVoucher.SelectedValue);
                 v.MAKHUVUC1 = Int32.Parse(DropDownListKhuVuc.SelectedValue);
-                v.MADOANHNGHIEP1 = Int32.Parse(TextBoxDN.Text);
+                v.MADOANHNGHIEP1 = int.Parse(Session["MaDN"].ToString());
                 v.ISAVAILABLE1 = 0;
                 VoucherDAO vDAO = new VoucherDAO();
                 VoucherBUS.UpdateVoucher(v);
