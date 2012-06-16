@@ -37,6 +37,21 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
+        public int InsertHinhAnh_koma(HinhAnhDTO ha)
+        {
+            int kq = 0;
+
+            try
+            {
+                data.sp_ins_ha_koma(ha.HINHDAIDIEN1, ha.HINHTHUMBNAIL1, ha.HINH11, ha.HINH21, ha.HINH31);
+                data.SubmitChanges();
+                kq = 1;
+            }
+            catch (Exception ex) { }
+
+            return kq;
+        }
+
         public  int DeleteHinhAnh(int maha)
         {
             int kq = 0;

@@ -546,4 +546,12 @@
     <Parameter Name="madc" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.sp_ins_ha_koma" Method="sp_ins_ha_koma">
+    <Parameter Name="hinhdaidien" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="thumb" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="h1" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="h2" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="h3" Type="System.String" DbType="NVarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

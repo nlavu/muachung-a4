@@ -24,6 +24,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
             HINH3 = ha.HINH3;
         }
 
+        public HinhAnhDTO()
+        {
+            // TODO: Complete member initialization
+        }
+
         public string HINH31
         {
             get { return HINH3; }
