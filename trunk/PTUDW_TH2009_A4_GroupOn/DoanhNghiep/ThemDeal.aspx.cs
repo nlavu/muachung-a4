@@ -59,11 +59,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
         {
             if (FileUploadDaiDien.PostedFile != null && FileUploadThumb.PostedFile != null && FileUploadHinh1.PostedFile != null && FileUploadHinh2.PostedFile != null && FileUploadHinh3.PostedFile != null)
             {
-                string daidien = Server.MapPath("~/images/") + FileUploadDaiDien.PostedFile.FileName;
-                string thumb = Server.MapPath("~/images/") + FileUploadThumb.PostedFile.FileName;
-                string hinh1 = Server.MapPath("~/images/") + FileUploadHinh1.PostedFile.FileName;
-                string hinh2 = Server.MapPath("~/images/") + FileUploadHinh2.PostedFile.FileName;
-                string hinh3 = Server.MapPath("~/images/") + FileUploadHinh3.PostedFile.FileName;
+                string daidien = Server.MapPath("~/images/sanpham/") + FileUploadDaiDien.PostedFile.FileName;
+                string thumb = Server.MapPath("~/images/sanpham/") + FileUploadThumb.PostedFile.FileName;
+                string hinh1 = Server.MapPath("~/images/sanpham/") + FileUploadHinh1.PostedFile.FileName;
+                string hinh2 = Server.MapPath("~/images/sanpham/") + FileUploadHinh2.PostedFile.FileName;
+                string hinh3 = Server.MapPath("~/images/sanpham/") + FileUploadHinh3.PostedFile.FileName;
                 FileUploadDaiDien.PostedFile.SaveAs(daidien);
                 FileUploadThumb.PostedFile.SaveAs(thumb);
                 FileUploadHinh1.PostedFile.SaveAs(hinh1);
