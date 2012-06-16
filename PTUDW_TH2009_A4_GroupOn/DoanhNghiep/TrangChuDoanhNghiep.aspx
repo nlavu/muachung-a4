@@ -9,6 +9,14 @@
     <asp:HyperLink ID="HyperLink3" runat="server" 
         NavigateUrl="~/DoanhNghiep/ChiTietDonHang.aspx">Xem đơn đặt hàng</asp:HyperLink>
     <br />
+    <br />
+    <asp:HyperLink ID="HyperLink4" runat="server" 
+        NavigateUrl="~/DoanhNghiep/ThemDeal.aspx">Thêm deal</asp:HyperLink>
+    <br />
+    <br />
+    <asp:HyperLink ID="HyperLink5" runat="server" 
+        NavigateUrl="~/DoanhNghiep/XoaDeal.aspx">Hủy deal</asp:HyperLink>
+    <br />
 <br />
 <asp:HyperLink ID="HyperLink2" runat="server" 
     NavigateUrl="~/DoanhNghiep/DangXuat.aspx">Logout</asp:HyperLink>
