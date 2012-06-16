@@ -13,7 +13,10 @@ namespace PTUDW_TH2009_A4_GroupOn.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Username"].ToString() != "admin")
+            {
+                Response.Redirect("../Default.aspx");
+            }
         }
 
         protected void ButtonThemDC_Click(object sender, EventArgs e)

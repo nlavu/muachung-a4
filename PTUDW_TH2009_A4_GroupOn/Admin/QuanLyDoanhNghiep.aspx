@@ -3,7 +3,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
-&nbsp;<asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
+&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" 
+        NavigateUrl="~/Admin/ThemDoanhNghiep.aspx">Thêm doanh nghiệp mới</asp:HyperLink>
+    <br />
+    <br />
+    <asp:Label ID="Label2" runat="server" Text="Thông tin doanh nghiệp"></asp:Label>
+    <br />
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
         AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" 
         DataKeyNames="MADN" DataSourceID="SqlDataSource1" ForeColor="#333333" 
         GridLines="None">
