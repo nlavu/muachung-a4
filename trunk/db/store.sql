@@ -8,9 +8,9 @@ commit tran laysoluongvouchertheoloai
 return @soluong;
 go
 
-DECLARE @soluong int
-exec @soluong = sp_laysoluongvouchertheoloai 1
-print @soluong
+--DECLARE @soluong int
+--exec @soluong = sp_laysoluongvouchertheoloai 1
+--print @soluong
 
 create proc sp_Top6VoucherTheoMaLoai @maloai int as
 begin tran top6vouchertheoma 
@@ -33,7 +33,7 @@ begin tran VoucherXemtheoma
 commit tran VoucherXemtheoma
 go
 
-exec sp_SelectVoucherTheoMa 5;
+--exec sp_SelectVoucherTheoMa 5;
 
 create proc sp_LayMaHinhAnhTheoMaVoucher @mavoucher int as 
 DECLARE @mahinhanh int;
@@ -44,9 +44,9 @@ commit tran laymahinhanhtheomavoucher
 return @mahinhanh;
 go
 
-DECLARE @mahinhanh int;
-exec @mahinhanh = sp_LayMaHinhAnhTheoMaVoucher 6;
-print(@mahinhanh)
+--DECLARE @mahinhanh int;
+--exec @mahinhanh = sp_LayMaHinhAnhTheoMaVoucher 6;
+--print(@mahinhanh)
 
 create proc sp_LayHinhAnhTheoMaHinh @mahinh int as
 begin tran LayHinhAnhTheoMaHinh
@@ -55,7 +55,7 @@ begin tran LayHinhAnhTheoMaHinh
 commit tran LayHinhAnhTheoMaHinh
 go
 
-exec sp_LayHinhAnhTheoMaHinh 5
+--exec sp_LayHinhAnhTheoMaHinh 5
 
 create proc sp_LayMaDoanhNghiepTheoMaVoucher @mavoucher int as 
 DECLARE @madoanhnghiep int;
@@ -66,9 +66,9 @@ commit tran LayMaDoanhNghiepTheoMaVouche
 return @madoanhnghiep;
 go
 
-DECLARE @madoanhnghiep int;
-exec @madoanhnghiep = sp_LayMaDoanhNghiepTheoMaVoucher 10;
-print(@madoanhnghiep)
+--DECLARE @madoanhnghiep int;
+--exec @madoanhnghiep = sp_LayMaDoanhNghiepTheoMaVoucher 10;
+--print(@madoanhnghiep)
 
 create proc sp_LayDoanhNghiepTheoMadn @madoanhnghiep int as
 begin tran LayDoanhNghiepTheoMaDN
@@ -77,6 +77,6 @@ begin tran LayDoanhNghiepTheoMaDN
 commit tran LayDoanhNghiepTheoMaDN
 go
 
-exec sp_LayDoanhNghiepTheoMadn 2
-
-exec sp_Top6VoucherTheoMa 3
+--exec sp_LayDoanhNghiepTheoMadn 2
+--
+--exec sp_Top6VoucherTheoMa 3
