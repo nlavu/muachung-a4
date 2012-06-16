@@ -17,7 +17,7 @@ namespace PTUDW_TH2009_A4_GroupOn.DoanhNghiep
             Session["MaDN"] = -1;
             // tên tài khoản
             Session["Username"] = "Guest";
-            Response.Redirect("TrangChuDoanhNghiep.aspx");
+            Response.Redirect("DNDangNhap.aspx");
         }
     }
 }

@@ -52,5 +52,20 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
+        public int UpdateTaiKhoanDoanhNghiep_info(TaiKhoanDoanhNghiepDTO tk)
+        {
+            int kq = 0;
+
+            try
+            {
+                data.sp_update_tkdn_koma(tk.MADN1, tk.TENDN1, tk.SDTDN1, tk.GIOITHIEU1, tk.WEBSITE1, tk.EMAIL1, tk.MADIACHIDN1);
+                data.SubmitChanges();
+                kq = 1;
+            }
+            catch (Exception ex) { }
+
+            return kq;
+        }
+
     }
 }

@@ -2,6 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:HyperLink ID="HyperLink1" runat="server" 
+        NavigateUrl="~/DoanhNghiep/SuaThongTinDN.aspx">Sửa thông tin cá nhân</asp:HyperLink>
+<br />
+    <br />
+    <asp:HyperLink ID="HyperLink3" runat="server" 
+        NavigateUrl="~/DoanhNghiep/ChiTietDonHang.aspx">Xem đơn đặt hàng</asp:HyperLink>
+    <br />
+<br />
+<asp:HyperLink ID="HyperLink2" runat="server" 
+    NavigateUrl="~/DoanhNghiep/DangXuat.aspx">Logout</asp:HyperLink>
+    <br />
+    <br />
+<br />
     <asp:Repeater ID="RepeaterDSDealDN" runat="server">
         <ItemTemplate>
             

@@ -24,6 +24,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
             TKISAVAILABLE = tk.TKISAVAILABLE;
         }
 
+        public TaiKhoanDTO()
+        {
+            // TODO: Complete member initialization
+        }
+
         public string USERNAME1
         {
             get { return USERNAME; }
