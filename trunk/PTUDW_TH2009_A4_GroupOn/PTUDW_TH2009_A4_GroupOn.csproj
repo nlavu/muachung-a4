@@ -142,6 +142,8 @@
     <Content Include="DoanhNghiep\TrangChuDoanhNghiep.aspx" />
     <Content Include="DoanhNghiep\ChiTietDeal.aspx" />
     <Content Include="DoanhNghiep\ChiTietDonHang.aspx" />
+    <Content Include="DoanhNghiep\DangXuat.aspx" />
+    <Content Include="DoanhNghiep\SuaThongTinDN.aspx" />
     <Content Include="DoanhNghiep\XoaDeal.aspx" />
     <Content Include="images\804787776logo nho%282%29.JPG" />
     <Content Include="images\background2.jpg" />
@@ -507,6 +509,20 @@
     <Compile Include="DoanhNghiep\ChiTietDonHang.aspx.designer.cs">
       <DependentUpon>ChiTietDonHang.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DoanhNghiep\DangXuat.aspx.cs">
+      <DependentUpon>DangXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\DangXuat.aspx.designer.cs">
+      <DependentUpon>DangXuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhNghiep\SuaThongTinDN.aspx.cs">
+      <DependentUpon>SuaThongTinDN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoanhNghiep\SuaThongTinDN.aspx.designer.cs">
+      <DependentUpon>SuaThongTinDN.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DoanhNghiep\XoaDeal.aspx.cs">
       <DependentUpon>XoaDeal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -659,7 +675,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>5169</DevelopmentServerPort>
+          <DevelopmentServerPort>9043</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
