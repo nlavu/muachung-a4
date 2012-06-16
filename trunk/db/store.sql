@@ -1,5 +1,5 @@
 
-alter proc sp_laysoluongvouchertheoloai @maloai int as
+create proc sp_laysoluongvouchertheoloai @maloai int as
 DECLARE @soluong int;
 begin tran laysoluongvouchertheoloai 
 SET TRANSACTION ISOLATION LEVEL read committed

@@ -3,6 +3,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
+    <asp:HyperLink ID="HyperLink1" runat="server" 
+        NavigateUrl="~/Admin/ThemKhachHang.aspx">Thêm khách hàng</asp:HyperLink>
+    <br />
+    <br />
     <asp:Label ID="Label1" runat="server" Text="Thông tin tài khoản"></asp:Label>
     <br />
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
