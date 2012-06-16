@@ -82,5 +82,23 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
+        public static int laymahinhanhtheomavoucher(int mavoucher)
+        {
+            int mahinhanh = 0;
+            try
+            {
+                mahinhanh = data.sp_LayMaHinhAnhTheoMaVoucher(mavoucher);
+            }
+            catch (Exception ex) { }
+            return mahinhanh;
+        }
+
+        public static HinhAnhDTO layhinhanhtheomahinh(int mahinh)
+        {
+            HinhAnh item = data.sp_LayHinhAnhTheoMaHinh(mahinh).Single();
+            HinhAnhDTO hinhanh = new HinhAnhDTO(item);
+
+            return hinhanh;
+        }
     }
 }

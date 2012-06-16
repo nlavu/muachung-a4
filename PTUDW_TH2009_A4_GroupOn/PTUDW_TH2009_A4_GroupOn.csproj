@@ -446,7 +446,9 @@
     <Compile Include="Admin\QuanLyTaiKhoanDN.aspx.designer.cs">
       <DependentUpon>QuanLyTaiKhoanDN.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BUS\HinhAnhBUS.cs" />
     <Compile Include="BUS\LoaiVoucherBUS.cs" />
+    <Compile Include="BUS\TaiKhoanDoanhNghiepBUS.cs" />
     <Compile Include="BUS\VoucherBUS.cs" />
     <Compile Include="DAO\ChiTietDonHangDAO.cs" />
     <Compile Include="DAO\CommentDAO.cs" />

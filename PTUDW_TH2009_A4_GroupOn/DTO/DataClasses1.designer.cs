@@ -707,6 +707,41 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), hinhdaidien, thumb, h1, h2, h3);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_LayHinhAnhTheoMaHinh")]
+		public ISingleResult<HinhAnh> sp_LayHinhAnhTheoMaHinh([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mahinh)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mahinh);
+			return ((ISingleResult<HinhAnh>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_LayMaHinhAnhTheoMaVoucher")]
+		public int sp_LayMaHinhAnhTheoMaVoucher([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mavoucher)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mavoucher);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_LayMaDoanhNghiepTheoMaVoucher")]
+		public int sp_LayMaDoanhNghiepTheoMaVoucher([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mavoucher)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mavoucher);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_LayDoanhNghiepTheoMadn")]
+		public ISingleResult<sp_LayDoanhNghiepTheoMadnResult> sp_LayDoanhNghiepTheoMadn([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> madoanhnghiep)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), madoanhnghiep);
+			return ((ISingleResult<sp_LayDoanhNghiepTheoMadnResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_SelectVoucherTheoMa")]
+		public ISingleResult<Voucher> sp_SelectVoucherTheoMa([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> mavoucher)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mavoucher);
+			return ((ISingleResult<Voucher>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChiTietDonHang")]
@@ -4031,6 +4066,248 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
 				if ((this._ISAVAILABLE != value))
 				{
 					this._ISAVAILABLE = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_LayDoanhNghiepTheoMadnResult
+	{
+		
+		private int _MADN;
+		
+		private string _TENDN;
+		
+		private string _SDTDN;
+		
+		private string _GIOITHIEU;
+		
+		private string _WEBSITE;
+		
+		private string _EMAIL;
+		
+		private string _KINHDO;
+		
+		private string _VIDO;
+		
+		private int _MADIACHIDN;
+		
+		private int _MADC;
+		
+		private string _DC1;
+		
+		private string _DC2;
+		
+		private string _DC3;
+		
+		public sp_LayDoanhNghiepTheoMadnResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MADN", DbType="Int NOT NULL")]
+		public int MADN
+		{
+			get
+			{
+				return this._MADN;
+			}
+			set
+			{
+				if ((this._MADN != value))
+				{
+					this._MADN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TENDN", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string TENDN
+		{
+			get
+			{
+				return this._TENDN;
+			}
+			set
+			{
+				if ((this._TENDN != value))
+				{
+					this._TENDN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SDTDN", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string SDTDN
+		{
+			get
+			{
+				return this._SDTDN;
+			}
+			set
+			{
+				if ((this._SDTDN != value))
+				{
+					this._SDTDN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GIOITHIEU", DbType="NVarChar(500) NOT NULL", CanBeNull=false)]
+		public string GIOITHIEU
+		{
+			get
+			{
+				return this._GIOITHIEU;
+			}
+			set
+			{
+				if ((this._GIOITHIEU != value))
+				{
+					this._GIOITHIEU = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WEBSITE", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string WEBSITE
+		{
+			get
+			{
+				return this._WEBSITE;
+			}
+			set
+			{
+				if ((this._WEBSITE != value))
+				{
+					this._WEBSITE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMAIL", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string EMAIL
+		{
+			get
+			{
+				return this._EMAIL;
+			}
+			set
+			{
+				if ((this._EMAIL != value))
+				{
+					this._EMAIL = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KINHDO", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string KINHDO
+		{
+			get
+			{
+				return this._KINHDO;
+			}
+			set
+			{
+				if ((this._KINHDO != value))
+				{
+					this._KINHDO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VIDO", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string VIDO
+		{
+			get
+			{
+				return this._VIDO;
+			}
+			set
+			{
+				if ((this._VIDO != value))
+				{
+					this._VIDO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MADIACHIDN", DbType="Int NOT NULL")]
+		public int MADIACHIDN
+		{
+			get
+			{
+				return this._MADIACHIDN;
+			}
+			set
+			{
+				if ((this._MADIACHIDN != value))
+				{
+					this._MADIACHIDN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MADC", DbType="Int NOT NULL")]
+		public int MADC
+		{
+			get
+			{
+				return this._MADC;
+			}
+			set
+			{
+				if ((this._MADC != value))
+				{
+					this._MADC = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DC1", DbType="NVarChar(500) NOT NULL", CanBeNull=false)]
+		public string DC1
+		{
+			get
+			{
+				return this._DC1;
+			}
+			set
+			{
+				if ((this._DC1 != value))
+				{
+					this._DC1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DC2", DbType="NVarChar(500)")]
+		public string DC2
+		{
+			get
+			{
+				return this._DC2;
+			}
+			set
+			{
+				if ((this._DC2 != value))
+				{
+					this._DC2 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DC3", DbType="NVarChar(500)")]
+		public string DC3
+		{
+			get
+			{
+				return this._DC3;
+			}
+			set
+			{
+				if ((this._DC3 != value))
+				{
+					this._DC3 = value;
 				}
 			}
 		}

@@ -146,10 +146,11 @@ display: block;
 -webkit-margin-end: 0px;
 }
 .rightNewContentMainBox {
-width: 400px;
+width: 355px;
 color: #404040;
 font-family: arial;
 font-size: 12px;
+padding-right:40px;
 }
 
 .float_right, .fr, .fR, #fr {
@@ -185,9 +186,10 @@ font-size: 14px;
 }
 .mainPrice .topTextPrice .numPrice {
 font-weight: bold;
-font-size: 30px;
+font-size: 56px;
 color: white;
 text-shadow: none;
+padding: 19px 0 28px 0;
 }
 .numPrice {
 font-size: 30px;
@@ -250,6 +252,7 @@ text-align: center;
 background: #E1EEF6;
 border: 1px solid #C4D8E7;
 color: #010101;
+text-align:center;
 }
 .timer {
 font-size: 14px;
@@ -709,7 +712,7 @@ input:focus {
 .rightTransTopBox{ background-position:right -10px}
 .bgTransTopBox{background: #fff; height:5px;margin:0 5px;}
 .titleBox{font-weight:bold}
-.titleBoxName{font-size:18px; color:#292929; font-weight:bold;width:695px}
+.titleBoxName{font-size:18px; color:#292929; font-weight:bold;width:900px}
 .title_loto{width:auto}
 .titleBox a{color:#292929}
 .titleBox a:hover{color:#00A0DC;text-decoration:none}
@@ -721,7 +724,7 @@ input:focus {
 .textView{float:left}
 .viewBar .viewComment{height:32px; width:17px;display:block;float:left;background:url('/images/add.jpg') no-repeat left 7px; margin-left:7px}
 .viewBar .lineSpace{padding:0 12px; color:#adadad}
-.contentMain{margin-top:10px;overflow:hidden}
+.contentMain{margin-top:20px;overflow:hidden}
 .rightContentMainBox{width:496px; }
 .mainBoxImg{width:489px; height:332px; overflow:hidden;background-color:#ededed}
 .mainBoxBorder{width:487px; height:330px; background:#fff no-repeat center center; margin:1px}
@@ -731,15 +734,15 @@ input:focus {
 .discountSmall{position:absolute;background:url(images/icon/discount.png) no-repeat;width:90px;height:72px;padding-top:17px;font-weight:bold;font-size:27px;color:#fff;top:-8px;left:0;z-index:5}
 .discountSmall span{font-size:15px}
 .leftContentMain{width:225px; height:332px;}
-.mainPrice{width:212px;height:113px;background:#007ab9 url('/images/leftMainPrice.png') no-repeat left 0}
+.mainPrice{margin-bottom:15px;width:350px;height:150px;background:#007ab9 url('/images/leftMainPrice.png') no-repeat left 0}
 .mainLeftArr{width:48px; height:113px; left:228px;background:url('/images/leftArr2.png') no-repeat; position:absolute;z-index:100}
 .buttonDetail {height:26px; background:url('images/background/bg_detail.png') no-repeat 0 0; float:right; margin-top:295px; padding-left:20px;cursor:pointer}
 .buttonDetail div{background:#87ad00;padding:0 10px 0 5px;color:#fff; font-weight:bold; line-height:26px}
 .sell{}
 .topProvince{color:#cb1a02; text-transform:uppercase;text-shadow:1px 1px 0 #b5b5b5}
-.topTextPrice{font-weight:bold; color:#fff; font-size:13px; padding:8px 0 0 15px}
+.topTextPrice{font-weight:bold; color:#fff; font-size:13px; padding:8px 0 0 15px; text-align:center;}
 .numPrice{font-size:30px;text-shadow:1px 1px 0 #B5B5B5}
-.buyNow,.buyNowOut,.buyNowWait{background:url('../images/button/buyNowNew1.png?v=2') no-repeat 0 0; width:182px; height:47px; display:block;cursor:pointer}
+.buyNow,.buyNowOut,.buyNowWait{background:url('../images/button/buyNowNew1.png?v=2') no-repeat 0 0;margin: 5px 0 0; width:182px; height:47px; display:block;cursor:pointer}
 .buyNow:hover{background-position:0 -47px}
 .buyNowOut,.buyNowOut:hover{background-position:0 -94px}
 .buyNowWait,.buyNowWait:hover{background-position:0 -141px}
@@ -766,7 +769,7 @@ div.more{padding:0 10px 10px;font-size:11px;font-weight:bold}
 a.view_more{background:url(images/button/view_more.gif) no-repeat 0 0;width:58px;height:11px;display:block}
 a.view_more:hover{background-position:0 -11px}
 a.top{background:url(images/icon/top.gif) no-repeat center center;width:11px;height:11px;display:block}
-.buyerStatic{padding-left:8px;position:relative;width:187px}
+.buyerStatic{padding-left:8px;position:relative;width:345px}
 .cProductNumber{position:absolute;color:#305B00;font-weight:bold;right:30px;top:36px}
 .cbrBar{width:188px;color:#403905;font-family:tahoma;font-weight:bold;margin:5px 0 5px}
 .bar, .bgBuyer, .bgBuyer .buyerPercent,.bgBuyer .buyerPercent p, .bgBuyer .buyerPercent div{background:url('images/background/bar_green.jpg') no-repeat right -45px;width:185px;overflow:hidden}
@@ -798,7 +801,7 @@ a.top{background:url(images/icon/top.gif) no-repeat center center;width:11px;hei
 .btnViewMoreRight{background-position:right -62px; line-height:31px;font-size:13px; color:#5f5f5f; text-align:center}
 .btnViewMoreRight a{font-weight:bold;display:block;color:#3f5f00; text-decoration:none}
 .btnViewMoreRight a:hover{color:#fff}
-.boxComment,.boxCommentBG,.boxCommentC{width:212px; height:110px}
+.boxComment,.boxCommentBG,.boxCommentC{width:355px; height:185px}
 .boxComment{top:-25px; right:-6px}
 .boxCommentBG{background:url('images/new/boxComment2.png') no-repeat;z-index:1}
 .boxCommentC{z-index:2}
@@ -863,3 +866,20 @@ a.top{background:url(images/icon/top.gif) no-repeat center center;width:11px;hei
 .chkOrderBoxValue{color:#424242; font-weight:bold}
 
 .lnkTog{color:#006eac;font-size:14px;background:url('/images/arrowTog.png') no-repeat 0 4px;padding-left: 15px}
+.mTop15, #mTop15{margin-top:15px;}
+.block_notice .content{background:#fbf9e2 url('../images/new/bg_solid.png') repeat-y center;border:1px solid #e0ddce;border-bottom-color: #e0ddcc; height: 390px;}
+.block_notice .content_bg{padding:0 8px;color:#3b3b3b;border-top:3px solid #f6e9bc; }
+.block_notice ul{margin:15px 0 0 15px}
+.block_notice li{margin:0;padding:5px 0}
+.block_notice ul li{list-style:disc}
+.block_notice .notice, .block_notice .conditions{background:url(../images/new/icon/notice.png) no-repeat left top;height:26px;line-height:26px;padding-left:38px;font-weight:bold;color:#171717;font-size:16px}
+.block_notice .conditions{background-image:url(../images/new/icon/conditions.png);height:33px;line-height:33px;padding-left:40px}
+.block_notice .leftBG,.block_notice .rightBG{float:left;width:410px;padding:15px}
+.block_notice .rightBG{float:right}
+.block_notice .bottom{
+  background:url(../images/new/bottom_notice.png) no-repeat 0 0;height:7px;display:block;overflow:hidden
+}
+.blueTitleDetail{padding-top:8px;margin-top:15px; clear:both;}
+.blueTitleDetail .blueTitle{color:#000;background-color:transparent}
+.blueTitleDetail .contentBox{color:#000;background-color:transparent;color:#2a2a2a;/*padding:12px 15px 6px*/}
+.grayTitleNew{color:#282013;padding:10px 8px 8px 0;font-weight:bold;font-size: 15px}
