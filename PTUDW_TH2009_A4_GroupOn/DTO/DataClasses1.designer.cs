@@ -700,6 +700,13 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), madnin, tendnin, sDTin, intro, website, email, madc);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ins_ha_koma")]
+		public int sp_ins_ha_koma([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string hinhdaidien, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string thumb, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string h1, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string h2, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string h3)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), hinhdaidien, thumb, h1, h2, h3);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChiTietDonHang")]

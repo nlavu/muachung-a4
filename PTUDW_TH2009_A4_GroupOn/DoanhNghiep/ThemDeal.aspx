@@ -9,9 +9,63 @@
         {
             width: 286px;
         }
+        .style3
+        {
+            width: 180px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Label ID="Label2" runat="server" Text="Thêm hình ảnh của deal"></asp:Label>
+    <br />
+    <table class="style1">
+        <tr>
+            <td class="style3">
+                <asp:Label ID="Label3" runat="server" Text="Hình đại diện"></asp:Label>
+            </td>
+            <td>
+                <asp:FileUpload ID="FileUploadDaiDien" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                <asp:Label ID="Label4" runat="server" Text="Hình thumbnail"></asp:Label>
+            </td>
+            <td>
+                <asp:FileUpload ID="FileUploadThumb" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                <asp:Label ID="Label5" runat="server" Text="Hình 1"></asp:Label>
+            </td>
+            <td>
+                <asp:FileUpload ID="FileUploadHinh1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                <asp:Label ID="Label6" runat="server" Text="Hình 2"></asp:Label>
+            </td>
+            <td>
+                <asp:FileUpload ID="FileUploadHinh2" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                <asp:Label ID="Label7" runat="server" Text="Hình 3"></asp:Label>
+            </td>
+            <td>
+                <asp:FileUpload ID="FileUploadHinh3" runat="server" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Upload" />
+    <br />
+    <br />
+    <asp:Label ID="Label1" runat="server" Text="Thêm Deal"></asp:Label>
+    <br />
     <table class="style1">
         <tr>
             <td class="style2">
@@ -140,14 +194,6 @@
         ConnectionString="<%$ ConnectionStrings:MuaChungConnectionString %>" 
         SelectCommand="sp_KhuVucXem" SelectCommandType="StoredProcedure">
     </asp:SqlDataSource>
-            </td>
-        </tr>
-        <tr>
-            <td class="style2">
-    <asp:Label ID="LabelDoanhNghiep" runat="server" Text="Mã doanh nghiệp"></asp:Label>
-            </td>
-            <td>
-    <asp:TextBox ID="TextBoxDN" runat="server"></asp:TextBox>
             </td>
         </tr>
     </table>
