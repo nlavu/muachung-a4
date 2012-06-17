@@ -96,5 +96,28 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
+      /*  public static string KiemTraTaiKhoanHopLe(string userName, string passWord)
+        {
+            string result = "-1";
+
+            try
+            {
+                //string md5Password = TaiKhoanDAO.GetMd5Hash(passWord);
+
+                //Nullable<int> res = null;
+                string res = data.sp_user_KiemTraTaiKhoanHopLe(userName, passWord);
+
+                if (res == null || res == "0")
+                    result = "-1";
+                else
+                    result = res;
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return "1";
+            }
+        }*/
     }
 }

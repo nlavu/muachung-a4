@@ -54,14 +54,14 @@ namespace PTUDW_TH2009_A4_GroupOn
             VoucherDTO voucher = VoucherBUS.SelectVoucherTheoMa(maVoucher);
             float newprice = voucher.GIAKHUYENMAI1;
             float oldprice = voucher.GIAGOC1;
-            float percent = (newprice * 100) / oldprice;
+            float percent = (1 -  (newprice/oldprice)) *100;
             int mahinh = HinhAnhBUS.laymahinhanhtheomavoucher(maVoucher);
             HinhAnhDTO hinhanh = HinhAnhBUS.layhinhanhtheomahinh(mahinh);
 
             result += @"<div id='borderImg' align='center'>
                             <div class='discount_new fixPNG'>
                                 <span>Giảm</span>
-                                <div>"+percent.ToString()+ @"%</div>
+                                <div>"+percent.ToString("f2")+ @"%</div>
                             </div>
                             <a href='DetailPr8oduct.aspx'>
                             <img height='334' width='508' style='margin-top:1px' alt='deal image' src='"+hinhanh.HINHDAIDIEN1.ToString()+@"'>
@@ -77,7 +77,7 @@ namespace PTUDW_TH2009_A4_GroupOn
             VoucherDTO voucher = VoucherBUS.SelectVoucherTheoMa(maVoucher);
             float newprice = voucher.GIAKHUYENMAI1;
             float oldprice = voucher.GIAGOC1;
-            float percent = (newprice * 100) / oldprice;
+            float percent = (1 -  (newprice/oldprice)) *100;
             result += @"<p style='text-align: justify; '>
                             <span style='font-size: 13px; '>
                                 <span style='font-family: arial,helvetica,sans-serif;'>
@@ -112,7 +112,7 @@ namespace PTUDW_TH2009_A4_GroupOn
                                     </em>
                                     -
                                     <span style='color: rgb(0, 128, 0);'>
-                                        <strong>Tiết kiệm "+percent.ToString()+@"%</strong>
+                                        <strong>Tiết kiệm "+percent.ToString("f2")+@"%</strong>
                                     </span>
                                 </span>
                             </span>
@@ -137,6 +137,9 @@ namespace PTUDW_TH2009_A4_GroupOn
                                     <strike>"+voucher.GIAGOC1.ToString()+@" đ</strike>
                                 </b>
                             </div>
+                        </div>
+                        <div class='mTop5' align='center'>
+                            <a class='buyNow fixPng'  href='Checkout.aspx?id="+voucher.MAVOUCHER1+@"'></a>
                         </div>";
             return result;
         }

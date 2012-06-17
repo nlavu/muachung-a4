@@ -1,0 +1,141 @@
+.new-popup .label,.classic-popup .label{font-size:13px;font-weight:bold;text-transform:uppercase}
+.new-popup .input-txt,.classic-popup .input-txt{border:1px solid #abd5e3;height:28px;padding-bottom:1px;width:208px;margin:5px 0}
+.new-popup .error,.classic-popup .error{border-color:red}
+.new-popup input.txt,.classic-popup input.txt{font-size:16px;height:28px;padding:0 5px;border:none;background:#fff url(images/popup/bgPopup.png) repeat-x left -92px;width:198px}
+.infoInputTxt input.txt,.infoTextareaTxt textarea.txt{
+font-size:16px;
+height:28px;
+line-height:28px;
+padding:0 5px;
+border:none;
+width:260px;
+background:#fff url('images/popup/bgPopup.png') repeat-x left -92px;
+overflow:hidden
+}
+.infoTextareaTxt textarea.txt{height:79px;line-height:16px;font-family:arial;font-size:12px;padding:5px}
+.box-gradien .content{padding-top:15px;background:none}
+.boxSuccess{border:1px solid #00ff00; padding:10px 0; text-align:center; font-weight:bold; font-size:14px;color:#006200}
+.highlight{font-weight:bold;color:#000}
+.classic-popup{background: rgba(255,255,255, 0.24);border-radius: 5px;-moz-border-radius: 5px;padding:5px}
+.classic-popup-title{width:100%;background:#0093d0}
+.classic-popup-title,.classic-popup-title .fl,a.classic-popup-close{height:40px;line-height:40px;font-weight:bold;color:#fff}
+.classic-popup-title .fl{padding-left:20px;font-size:16px;text-transform:uppercase;text-shadow:0 1px 0 #666666}
+a.classic-popup-close{float:right;font-size:13px;line-height: 30px;padding:0 10px}
+a.classic-popup-close:hover{text-decoration:none;color:#4f2d00}
+.classic-popup-content{width:100%;color:#472900}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tbody {
+display: table-row-group;
+vertical-align: middle;
+border-color: inherit;
+}
+
+tr {
+display: table-row;
+vertical-align: inherit;
+border-color: inherit;
+}
+
+td[width=980] {
+width: 980px;
+}
+
+td[valign=top] {
+vertical-align: top;
+}
+
+td, th {
+display: table-cell;
+vertical-align: inherit;
+}
+
+form {
+    display: inline;
+}
+fieldset {
+    border: 0 none;
+}
+.sp-methods {
+    float: left;
+    margin: 0 0 8px;
+}
+.sp-methods dt {
+    float: left;
+    padding: 5px 5px 0 0;
+}
+input.radio {
+    margin-right: 3px;
+}
+input, select, textarea, button {
+    color: #2F2F2F;
+    font: 12px/15px Arial,Helvetica,sans-serif;
+    vertical-align: middle;
+}
+.sp-methods label {
+}
+.sp-methods dd {
+    float: left;
+    padding: 10px 0 0;
+    width: 500px;
+}
+.sp-methods .form-list {
+}
+.sp-methods .form-list li{
+	 margin: 0 0 8px;
+}
+.form-list li { margin:0 0 8px; }
+.form-list label { float:left; position:relative; z-index:0; color:#000; font-weight:bold; padding-bottom:7px; }
+.form-list label.required {}
+.form-list label.required em { float:right; font-style:normal; color:#ab0051; position:absolute; top:0; right:-8px; }
+.form-list li.control label {   color: #bc0076;  float: none;  font-size: 11px;  font-weight: normal; }
+.form-list li.control input.radio,
+.form-list li.control input.checkbox { margin-right:6px; }
+.form-list li.control .input-box { clear:none; display:inline; width:auto; }
+#payment_form_ccsave div.input-box {
+    width: 370px;
+}
+.form-list .input-box { display:block; clear:both; width:260px; }
+.form-list .input-box { display:block; clear:both; width:260px; }
+.form-list .field { float:left; width:275px; }
+.form-list input.input-text { width:250px; }
+.form-list textarea { width:250px; height:10em; }
+.form-list select { width:260px; }
+.form-list li.wide .input-box { width:535px; }
+.form-list li.wide input.input-text { width:525px; }
+.form-list li.wide textarea { width:525px; }
+.form-list li.wide select { width:535px; }
+.form-list li.additional-row { border-top:1px solid #eee; margin-top:10px; padding-top:7px; }
+.form-list li.additional-row .btn-remove { float:right; margin:5px 0 0; }
+.form-list .input-range input.input-text { width:74px; }
+input.input-text, textarea {
+    padding: 4px;
+}
+
+input.input-text, select, textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+}
+input, select, textarea, button {
+    color: #2F2F2F;
+    font: 12px/15px Arial,Helvetica,sans-serif;
+    vertical-align: middle;
+}
+#payment_form_ccsave select {
+    padding: 2px;
+    width: 258px;
+}
+#payment_form_ccsave .v-fix select {
+    padding: 2px;
+    width: 180px;
+}
+select option {
+    padding-right: 10px;
+}
+.v-fix { float:left; }
+.v-fix .validation-advice { display:block; width:12em; margin-right:-12em; position:relative; }
+.auto {top:44px;}

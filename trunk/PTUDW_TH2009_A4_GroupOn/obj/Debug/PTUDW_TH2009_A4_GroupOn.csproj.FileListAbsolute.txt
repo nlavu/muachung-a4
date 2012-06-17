@@ -28,3 +28,8 @@ d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\bin\PTUDW_TH2009_
 d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\obj\Debug\ResolveAssemblyReference.cache
 d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\obj\Debug\PTUDW_TH2009_A4_GroupOn.dll
 d:\3_PTUDWeb\Do An Cuoi Ky\muachung-a4\PTUDW_TH2009_A4_GroupOn\obj\Debug\PTUDW_TH2009_A4_GroupOn.pdb
+d:\3_PTUDWeb\Do An Cuoi Ky\16062012\PTUDW_TH2009_A4_GroupOn\bin\PTUDW_TH2009_A4_GroupOn.dll
+d:\3_PTUDWeb\Do An Cuoi Ky\16062012\PTUDW_TH2009_A4_GroupOn\bin\PTUDW_TH2009_A4_GroupOn.pdb
+d:\3_PTUDWeb\Do An Cuoi Ky\16062012\PTUDW_TH2009_A4_GroupOn\obj\Debug\ResolveAssemblyReference.cache
+d:\3_PTUDWeb\Do An Cuoi Ky\16062012\PTUDW_TH2009_A4_GroupOn\obj\Debug\PTUDW_TH2009_A4_GroupOn.dll
+d:\3_PTUDWeb\Do An Cuoi Ky\16062012\PTUDW_TH2009_A4_GroupOn\obj\Debug\PTUDW_TH2009_A4_GroupOn.pdb
