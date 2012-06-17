@@ -742,6 +742,13 @@ namespace PTUDW_TH2009_A4_GroupOn.DTO
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mavoucher);
 			return ((ISingleResult<Voucher>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_VoucherTheoMaLoaidangban")]
+		public ISingleResult<Voucher> sp_VoucherTheoMaLoaidangban([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> maloai)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maloai);
+			return ((ISingleResult<Voucher>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChiTietDonHang")]

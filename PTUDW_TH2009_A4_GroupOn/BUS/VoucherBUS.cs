@@ -76,5 +76,10 @@ namespace PTUDW_TH2009_A4_GroupOn.BUS
         {
             return VoucherDAO.SelectVoucherTheoMa(mavoucher);
         }
+
+        public static List<VoucherDTO> SelectTheoMaLoaidangban(int maloai)
+        {
+            return VoucherBUS.SelectTheoMaLoaidangban(maloai);
+        }
     }
 }

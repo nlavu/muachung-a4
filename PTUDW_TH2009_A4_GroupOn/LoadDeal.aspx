@@ -1,6 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="Default.aspx.cs" Inherits="PTUDW_TH2009_A4_GroupOn._Default" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LoadDeal.aspx.cs" Inherits="PTUDW_TH2009_A4_GroupOn.LoadDeal" %>
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
     <p>
         <asp:SiteMapPath runat="server">
@@ -27,24 +25,24 @@
     </script>
 
     <script type="text/javascript" language="javascript">
-    function list(a) {
-        var keyword = document.getElementById('keyword');
+        function list(a) {
+            var keyword = document.getElementById('keyword');
 
-        if (a.substring(0, 9) == "index.php") {
-            document.dangky.action = a;
-        }
-        else {
-            if (keyword.value == '') {
-                alert("Vui lòng nhập từ khóa");
-                keyword.focus();
-                return;
+            if (a.substring(0, 9) == "index.php") {
+                document.dangky.action = a;
             }
+            else {
+                if (keyword.value == '') {
+                    alert("Vui lòng nhập từ khóa");
+                    keyword.focus();
+                    return;
+                }
 
 
+                document.timkiem.submit();
+            }
             document.timkiem.submit();
         }
-        document.timkiem.submit();
-    }
     </script>
 
    
@@ -67,9 +65,9 @@
     <div class="boxcountry">
         <div class="quanhuyen-tt">Deal</div>
         <div class="wrapquanhuyen">
-            <div class="quanhuyen"><a href="LoadDeal.aspx?id=1">Deal Khuyến Mãi<span class="orange"></span></a></div> 
-            <div class="quanhuyen"><a href="LoadDeal.aspx?id=2">Deal Đã Bán<span class="orange"></span></a></div> 
-            <div class="quanhuyen"><a href="LoadDeal.aspx?id=3">Tất Cả Deal<span class="orange"></span></a></div>
+            <div class="quanhuyen"><a href="#">Deal Khuyến Mãi<span class="orange"></span></a></div> 
+            <div class="quanhuyen"><a href="#">Deal Đã Bán<span class="orange"></span></a></div> 
+            <div class="quanhuyen"><a href="#">Tất Cả Deal<span class="orange"></span></a></div>
         </div>
     </div>          
     <div class="boxdmsp">
