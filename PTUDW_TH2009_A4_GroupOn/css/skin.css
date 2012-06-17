@@ -1,6 +1,6 @@
 .jcarousel-skin-tango .jcarousel-container {
 	position:absolute;
-	z-index:999999999;
+	z-index:100;
 }
 
 .jcarousel-skin-tango .jcarousel-direction-rtl {

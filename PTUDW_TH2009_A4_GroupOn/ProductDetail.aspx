@@ -33,6 +33,8 @@
     <script src="Scripts/jquery.lazyload.js" language="javascript" type="text/javascript"></script>
     <script src="Scripts/connectOauth.js" language="javascript" type="text/javascript"></script>
     <script src="Scripts/customerEdit.js" language="javascript" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/MyGoogleMap.js"></script>
     
       <script type="text/javascript">
           var _gaq = _gaq || [];
@@ -201,10 +203,10 @@
                                                                 <strike>120.000 đ</strike>
                                                             </b>
                                                         </div>
-                                                    </div>-->
-                                                    <div class="mTop5 " align="center">
-                                                        <a class="buyNow fixPng" onclick="shop.cart.addItem(4649,1333602000,1334206740,61,300)" href="Member/OrderStep1.aspx"></a>
                                                     </div>
+                                                    <div class="mTop5 " align="center">
+                                                        <a class="buyNow fixPng"  href="Checkout.aspx?id"></a>
+                                                    </div>-->
                                                     <div style="height: 5px;overflow: hidden;"></div>
                                                     </div>
                                                     <div id="buyerHomeStatistics-4649" class="mTop15 boxGreenNew boxGreenNewIE7">
@@ -264,7 +266,7 @@
                                                                         <img align="left" width="32" title="Muachunghcm" alt="Muachunghcm" src="../images/product/0.698483001306934599.png">
                                                                     </div>
                                                                     <div class="fl" style="width:150px;height:48px;overflow:hidden;font-size: 11px">
-                                                                        <strong>Muachunghcm</strong>
+                                                                        <strong>testbinhluan</strong>
                                                                         <div class="mTop5" style="color:#797979">Đơn hàng này chỉ có combo 3 hộp bánh xếp, không kèm theo nước chấm bạn nhé!</div>
                                                                     </div>
                                                                     <div class="c"> </div>
@@ -275,13 +277,48 @@
                                                 </div>
                                             </div>
                                         <div class="c"></div>
-                                        <div>
-                                            <div class="FB_like fl pTop10">
-                                                <iframe scrolling="no" frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:450px; height:25px;" src="http://www.facebook.com/plugins/like.php?locale=vi&href=http%3A%2F%2Fmuachung.vn%2Fsan-pham%2Fp-4649%2FCombo-03-hop-banh-xep-nhat-Yaki-Gyouza.html&layout=standard&show_faces=false&width=450&action=like&font=arial&colorscheme=light&height=25">
-                                                </iframe>
+                                        <div class="addthis_toolbox addthis_default_style">
+                                                <table align="center">
+                                                    <tr>
+                                                        <td style="width: 50px;">
+                                                            <a class="addthis_button_facebook_like"></a>
+                                                        </td>
+                                                        <td style="width: 80px;">
+                                                            <p style="margin-left: -30px; margin-top: 1px;">
+                                                                <a class="addthis_button_tweet"></a>
+                                                            </p>
+                                                        </td>
+                                                        <td style="width: 80px;">
+                                                            <a class="" name="zm_share" type="text" title="Chia sẻ lên Zing Me">
+                                                                <img src="/images/ico-zing.png" width="25px" height="20px" alt="Chia sẻ lên Zing Me" />
+                                                                Zing Me</a>
+                                                        </td>
+                                                        <td style="width: 80px;">
+                                                            <a title="Hot!" href="http://linkhay.com/submit">
+                                                                <img src="http://linkhay.com/templates/images/guide/button4.jpg" width="62" height="20"
+                                                                    alt="Hot!" /></a>
+                                                        </td>
+                                                        <td style="width: 70px;">
+                                                            <script type="text/javascript">                    var linkhay_title = '';</script>
+                                                            <script type="text/javascript">                    var linkhay_url = '';</script>
+                                                            <script type="text/javascript">                    var linkhay_desc = '';</script>
+                                                            <script type="text/javascript">                    var linkhay_style = '2';</script>
+                                                            <script type="text/javascript" src="http://linkhay.com/widgets/linkhay.js"></script>
+                                                        </td>
+                                                        <td style="width: 50px;">
+                                                            <p>
+                                                                <a class="addthis_button_google_plusone"></a>
+                                                            </p>
+                                                        </td>
+                                                        <td style="width: 25px;">
+                                                            <p style="margin-left: -15px; margin-top: -2px;" />
+                                                                <a class="addthis_button_compact"></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
+                                            <script src="http://wb.me.zing.vn/index.php?wb=LINK&t=js&c=share_button" type="text/javascript"></script>
+                                            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e6191c52f2cdac5"></script>
                                         <div class="clear"></div>
                                         <div class="block_notice mTop15">
                                             <div class="content">
@@ -498,6 +535,7 @@
                                             <img width="690" alt="shop map" src="http://muachung10.vcmedia.vn/map/2012/04/04/0.028947001333530131.jpg">
                                         </div>
                                     </div>
+                                    
                                     <div class="boxBottomLeft fixPNG">
                                         <div class="boxBottom"></div>
                                         <div class="boxBottomRight fixPNG"></div>

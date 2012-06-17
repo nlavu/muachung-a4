@@ -1,0 +1,292 @@
+﻿/* table */
+table.list {
+border:1px solid #CCCCCC;
+width:100%;
+}
+tr.bg1{background:#F4F9FF}
+tr.bg2{background:#FFF}
+td.item {
+border-top:1px solid #DDD;
+color:#000;
+font-size:13px;
+padding:5px 4px;
+}
+.bRight{
+border-right:1px solid #DDD;
+}
+.bBottom{
+border-bottom:1px solid #DDD;
+}
+td.head, th.head {
+background:#436088 url(images/bg/tab_bg.gif) repeat-x top left;
+color:#FFF;
+font-size:11px;
+font-weight:bold;
+padding:5px 5px 5px 8px;
+}
+td.head a, th.head a{color:#fff}
+td.head a:hover, th.head a:hover{text-decoration:none}
+/* REG form */
+#cartRegisterForm{padding:0}
+#cartRegisterForm .fl{margin:5px 25px}
+#cartRegisterForm .label{font-size:12px;color:#0a9cca;font-weight:bold}
+.verify-account .title{font-weight:bold;font-size:13px;text-transform:uppercase}
+.verify-account #note{width:435px;height:100px;padding:5px;border:1px solid #FFC26E}
+.box-gradien{border:1px solid #abd5e3;background:#fff url('../images/popup/bgPopup.png') repeat-x left -92px;padding:10px 0 10px 20px;}
+#box-gradien2{padding:0}
+.box-gradien .title{font-size:14px;font-weight:bold;color:#301b00;text-transform:uppercase}
+.cff9200{color:green}
+.cart-finish .head{background:#00A0DC;font-weight:bold;color:#fff;font-size:12px}
+.cart-finish .bRight{border-color:#ABD5E3}
+.cart-finish td.item{border-color:#ABD5E3;color:#4e2d00;font-size:12px}
+.cart-finish td.total-all{font-size:14px;font-weight:bold;color:#00A0DC}
+.donga_bank, .vc_bank, .mb_bank, .vib_bank, .acb_bank, .techcom_bank, .bidv_bank,.agribank,.vietinbank{
+background:url(images/bank/donga-bank.gif) no-repeat center center;
+width:100px;
+height:55px;
+display:block;
+overflow:hidden;
+margin:10px 10px 0 0;
+float:left;
+text-align:center
+}
+.vc_bank{background-image:url(images/bank/vietcom-bank.gif)}
+.mb_bank{background-image:url(images/bank/mb.png)}
+.vib_bank{background-image:url(images/bank/vib-bank.gif)}
+.acb_bank{background-image:url(images/bank/acb.png)}
+.techcom_bank{background-image:url(images/bank/techcombank.gif)}
+.bidv_bank{background-image:url(images/bank/bidv.gif)}
+.vietinbank{background-image:url(images/bank/vietinbank.gif)}
+.agribank{background-image:url(images/bank/agribank.gif)}
+.bankInfo{padding:10px;margin-left:30px}
+.orderTable td{ padding:10px; vertical-align:top}
+/* bank */
+.bank {padding-left:20px}
+.bank a, .card_type a{
+background: url('images/payment/bgbank.png') left top no-repeat;
+width: 100px;
+height: 24px;
+padding:3px 2px;
+display:block;
+margin:10px 5px 0 0;
+}
+.bank a:hover,.bank a.active,.card_type a:hover,.card_type a.active{background-position: left -30px}
+.bank a span,.card_type a span{background: url('images/payment/bank5.png?v=1') no-repeat center center; height:24px;width:96px;overflow:hidden;display:block;cursor:pointer}
+.bank #vcb{background-position:center 0}
+.bank #donga{background-position:center -24px}
+.bank #techcom{background-position:center -48px}
+.bank #agri{background-position:center -72px}
+.bank #bidv{background-position:center -96px}
+.bank #vietin{background-position:center -120px}
+.bank #mb{background-position:center -144px}
+.bank #acb{background-position:center -168px}
+.bank #vib{background-position:center -192px}
+.bank #hd{background-position:center -216px}
+.bankPay #shb{background-position:center -264px}
+.bankPay #exim{background-position:center -288px}
+.bankPay #mari{background-position:center -312px}
+.bankPay #vieta{background-position:center -336px}
+.bank #nama{background-position:center -360px}
+/* new theme */
+.paymentChooseType{padding:0 0 10px 50px;cursor:pointer}
+.amtOnline{}
+.sendGold{}
+.sendAtm{}
+.sendCop{}
+.sendCoo{}
+.sendCod{}
+.atmOnlineNoActive, .visaNoActive,.mcardNoActive, .atmNoActive, .copNoActive, .cooNoActive, .codNoActive{background-color:#eee}
+.atmOnlineNoActive,.visaNoActive{background-image:url(images/newCart/payment_type/online_no.png?v=1)}
+.mcardNoActive{background-image:url(images/newCart/payment_type/gold_no.png?v=1)}
+.atmNoActive{background-image:url(images/newCart/payment_type/atm_no.png?v=1)}
+.copNoActive{background-image:url(images/newCart/payment_type/cop_no.png?v=1)}
+.cooNoActive{background-image:url(images/newCart/payment_type/coo_no.png?v=1)}
+.codNoActive{background-image:url(images/newCart/payment_type/cop_no.png?v=1)}
+.arrowRight{padding:10px 30px 0 0;background:none;margin-right:2px}
+.pay_active .arrowRight{background:url('images/newCart/arrow_select.png') no-repeat right center}
+.clicked .arrowRight{background:url('images/newCart/checked.png') no-repeat right center}
+.atmOnlineNoActive .arrowRight, .visaNoActive .arrowRight,.mcardNoActive .arrowRight, .atmNoActive .arrowRight, .copNoActive .arrowRight, .cooNoActive .arrowRight, .codNoActive .arrowRight{
+background:url(images/newCart/not_avail.png) no-repeat right top;
+margin-right:0
+}
+.atmOnlineNoActive .bankPay a span{background:url(images/payment/bank4.gif)}
+.radioBox{float:left}
+.radioBox input{margin:0;padding:0}
+.paymentContent{width:550px;float:left;margin-left:5px}
+.paymentTitle{font-weight:bold; color:#2c2c2c;line-height:100%;font-size:12px}
+.paymentTitle span{font-weight:normal;color:#be0d0d;font-size:11px}
+.paymentNotice{margin-top:3px;font-weight:bold;color:#fa0000;}
+.paymentText{margin:5px 0;font-size:11px;color:#888}
+ul.paymentText{padding-left: 33px;line-height: 150%;margin:5px 0 0}
+ul.paymentText li{list-style:disc}
+.paymentLinkMore{background:url('images/newCart/arrow.png') no-repeat left 50%; padding-left:10px}
+.paymentLinkMore a{font-size:11px}
+.paymentLinkMore a:hover{text-decoration:underline}
+.paymentGuide{}
+.bankPay a{
+height: 24px;
+padding:5px 0;
+display:block;
+margin:10px 0 0 0;
+}
+.bankPay a span{ background: url('images/payment/bank5.png?v=1') no-repeat center center; height:24px;width:60px;overflow:hidden;display:block}
+.bankPay #vcb{background-position:center 0}
+.bankPay #donga{background-position:center -24px}
+.bankPay #techcom{background-position:center -48px}
+.bankPay #agri{background-position:center -72px; width: 155px}
+.bankPay #bidv{background-position:center -96px; width: 102px}
+.bankPay #vietin{background-position:center -120px;width:96px}
+.bankPay #mb{background-position:center -144px; width: 70px}
+.bankPay #acb{background-position:center -168px; width: 70px}
+.bankPay #vib{background-position:center -192px}
+.bankPay #hd{background-position:center -216px;width: 70px}
+.bankPay #tp{background-position:center -240px}
+.bankPay #shb{background-position:center -264px;width:90px}
+.bankPay #exim{background-position:center -288px;width:96px}
+.bankPay #mari{background-position:center -312px;width:96px}
+.bankPay #vieta{background-position:center -336px;width:96px}
+.bankPay #nama{background-position:center -360px;width:40px}
+.bankPay a span#vinaphone{background-image:url(images/payment/vinaphone.png);width:85px}
+.bankPay a span#mobiphone{background-image:url(images/payment/mobiphone.png);width:70px}
+.creditPay span{background: url('images/newCart/creditPay.png') no-repeat center top; height:24px;width: 100px;overflow:hidden;display:block;float:left}
+.creditPay #visa{background-position:center -29px}
+.gold-right .bankPay a, .paymentChooseType .bankPay a{margin:0;padding:0 5px 5px}
+/*.paymentChooseType .bankPay a span{width:100px}*/
+.gold-right .creditPay span, .paymentChooseType .creditPay span{width:60px}
+.gold-right .creditPay #visa, .paymentChooseType .creditPay #visa{background:url(images/newCart/visa.png?v=1) no-repeat center center}
+.gold-right .creditPay #master, .paymentChooseType .creditPay #master{background:url(images/newCart/master.png?v=1) no-repeat center center}
+/***************** info input *************************/
+.cartNewForm{background:url('images/newCart/white.png') repeat-y 301px}
+.infoInputLeft{width:300px; float:left}
+.infoInputRight{float:left;margin-left:28px}
+.infoInputTxt,.infoTextareaTxt{ border: 1px solid #ABD5E3;height: 28px;margin: 5px 0;width: 270px}
+.infoTextareaTxt{height: 90px}
+.newLabel{font-size:16px;color:#0a9cca;font-weight:bold}
+.infoInputText{color:#787878;font-size:12px;margin:5px 0;width:270px;text-align:justify}
+.infoInputCheck{color:#0c92bc;font-size:16px;font-weight:bold}
+.newCartNotice{width:255px;background-color:#fffede;border:1px solid #ffedbe;padding:10px;line-height:150%}
+.codeSendSMS{text-transform:uppercase;color:#fe0000; font-weight:bold}
+/*.jNiceHidden{display:none}*/
+.icon_pay{height:75px;background:url(images/newCart/icon_pay.png) no-repeat center center}
+.sms_style{color:red;font-size:16px;font-weight:bold}
+.bank_title{font-size:14px;font-weight:bold;color:blue}
+#formQuantity {font-size:14px;font-weight:bold}
+.bank_list{margin:0 0 10px 10px}
+.bank_info{width:510px;display:none}
+.bank_info .bank_detail{background:#fff;padding:0 20px 0 0;width:490px}
+.bank_info a.bank_go,.bank_info a.bank_go:hover{
+width:155px;height:20px;line-height:20px;padding-left:25px;font-weight:bold;font-size:14px;color:#000;float:right;
+background:url(images/payment/return.jpg) no-repeat left center
+}
+.bank_info a.bank_go:hover{text-decoration:underline}
+.bgAllPrice{height:22px;line-height:22px;padding:7px 0;font-size:18px;font-weight:bold;color:#0a97c4;border-top:1px solid #ebebeb}
+.bank_atm_online .bank_title{
+font-size:16px;
+color:#03739c;
+}
+.bank_atm_online .bank_content{
+background:#fff;
+padding:12px;
+margin-top:10px;
+}
+.bank_atm_online .bankPay{
+width:370px;
+border-right:1px solid #d9d9d9;
+overflow:hidden;
+float:left
+}
+.bank_atm_online .bankInfomation{
+float:left;
+padding-left:15px;
+color:#000;
+width:320px;
+font-size:14px
+}
+.mt300{margin-top:300px}
+a.bank_more_link{color:#007ab9;font-size:12px;float:left;line-height:40px;text-align:center;width:90px;font-weight:bold}
+a.bank_more_link:hover{text-shadow:0 0 1px #00A0DC}
+/***************** info input new *************************/
+.newCustomerInfo{border:1px solid #F1F1F1;background:#FAFAFA;padding:10px}
+.newCustomerInfo .input{font-size:16px;color:#0a9cca;font-weight:bold;height:26px;line-height:26px;position:relative}
+.newCustomerInfo .listDistrict{right:32px;width:143px;}
+.newCustomerInfo .listDistrict a{width:115px;}
+.newCustomerInfo input{height:20px;line-height:20px}
+.newCustomerInfo textarea{width:270px;height:50px;font-family:arial;font-size:12px}
+.newCustomerInfo .description{font-size:11px;color:#787878;text-align:justify;padding-top:5px}
+.cartNewForm #cError{margin:0}
+.bgCartInfo{height:45px;background:#fffee6 url(images/newCart/bgCartInfo.png) repeat-x left bottom;font-size:14px;color:red;font-weight:bold;text-align:center;padding:5px 25px 0;line-height:18px;overflow:hidden}
+.bgCartInfo a{color:#0783aa;text-decoration:underline}
+#cartRechargeForm .newCustomerInfo .input{font-size:14px;color:#472900}
+.xprice{margin:-14px 0 0 80px;padding:0px 0 0}
+#cart-check-out-step1 .content{padding:15px 20px 10px}
+/* nap gold */
+.goldRecharge, .goldRecharge2, .goldRecharge3_online, .goldRecharge3_card{color:#000}
+.ff5a00{color:#ff5a00}
+.gold-right{float:left;margin:0 0 20px 5px;width:505px;overflow:hidden}
+.gold-title label{font-weight:bold;font-size:14px; height: 24px;line-height: 24px;cursor:pointer}
+.gold-title label span{color:#065cec}
+.gold-title input{line-height:14px;border:1px solid #ccc;width:216px;padding:5px;margin:0;font-size:11px;color:#8a8a8a;background:#f9f9f9}
+.gold-title input.gold_email_active{padding:4px;border:2px solid #8A2825;color:#8A2825}
+.gold-title input.gold_email_black{color:#000}
+.gold-title input.radio_info{border:0;height:auto;width:auto;padding:0;margin:0;background:none}
+.gold-content ul li{line-height:150%}
+.gold-content .paymentText{margin:0}
+.goldRecharge3_online .gold-right{float:none;margin:0;width:auto;overflow:hidden}
+.goldRecharge3_online .gold-title input,.goldRecharge3_card .gold-title input#gold_recharge_code{
+color:#000;
+font-weight:bold;
+font-size:14px;
+width:150px
+}
+.goldRecharge3_card .gold-title input#gold_recharge_code{width: 245px}
+.lineSoha{border-top:1px solid #ccc;margin:15px 0;padding-top:15px}
+.sohaInfo{width:450px;float:left;margin-left:20px}
+/* finish */
+.titleStepSuccess,.titleStepError{font-size:18px; color:#0174a4; font-weight:bold;text-align:center}
+.titleStepError{color:#e10000}
+.oderCode{margin:10px 0;font-weight:bold; text-align:center}
+.listFinishStep{ margin-left:30px; line-height:20px}
+.listFinishStep li{list-style: disc outside; margin:10px 0}
+.successMail{color:#003eda}
+.successPrice{color:#db0000; font-size:14px}
+.successBank a{background:none}
+/* shortcut links */
+.shortcut{float:left;margin:0 3px;position:relative;z-index:3}
+.shortcut a{display:block;width:45px;height:40px;background:#fff no-repeat center center}
+.shortcut .tool_tip_arrow{position:absolute;z-index:100;top:40px;left:15px;width:16px;height:9px;background:url(images/icon/arrow_tip.png) no-repeat top left}
+.shortcut .tool_tip{position:absolute;z-index:99;top:48px;padding:8px;border:1px solid #ffcd36;background:#fffdde;color:#fe8800;font-weight:bold}
+.shortcut a.sc_online{background-image:url(images/newCart/payment_type/online_s.png);background-position:center 1px}
+.shortcut a.sc_atm{background-image:url(images/newCart/payment_type/atm_s.png);background-position:center -3px}
+.shortcut a.sc_gold{background-image:url(images/newCart/payment_type/gold_s.png);background-position:center -1px}
+.shortcut a.sc_cod{background-image:url(images/newCart/payment_type/cop_s.png);background-position:center 1px}
+.shortcut a.sc_cop{background-image:url(images/newCart/payment_type/cop_s.png);background-position:center -1px}
+.shortcut a.sc_coo{background-image:url(images/newCart/payment_type/coo_s.png)}
+.blueTit{color:#00A0DC;font-weight:bold;margin: 10px 0 5px}
+.gold-customer-re{margin:0 10px 10px;padding:10px;border:2px solid #ffcd36;background:#fffdde;color:#fe8800}
+/* new 22/11/2011 */
+.cartNewForm{background:none}
+.text_tit{font-size:18px;font-weight:bold;color:#0093d0;height:26px;line-height:26px;padding-left:35px}
+.infoUser .text_tit{background:url('../images/newCart/icon_user.png') no-repeat 8px 0}
+.infoAddress .text_tit{background:url('../images/newCart/icon_book.png') no-repeat 0 0}
+.cartNewForm table{color:#3c3c3c}
+.cartNewForm table input, .nice_input{width:210px;height:17px;padding:2px 7px;font-size:12px;color:#000;border:1px solid #a6a6a6; margin:9px 0 0 0;}
+.cartNewForm table select{padding:4px;width:225px}
+.infoNumber .text_tit{background:url('../images/newCart/icon_cart.png') no-repeat 0 0;padding-left:45px}
+.infoCart .text_tit{background:url('../images/newCart/oto.png') no-repeat 0 0;padding-left:45px}
+.infoTotal .text_tit{background:url('../images/newCart/icon_arrow.png') no-repeat 4px 0;padding-left:45px; float:right;}
+.infoNumber{height:60px;background:url('../images/newCart/bg.png') repeat-x 0 0;padding:10px 0 0 14px}
+.infoCart,.infoTotal{padding:0 14px 0}
+.infoTotal #bgAllPrice{color:#ea0000;font-size:24px}
+#ship_coupon,#ship_office,#ship_product{padding:0;margin:0;height:13px;width:13px} /*width,height fix cho IE 7*/
+.txt_tit{font-weight:bold;color:#000}
+.cRed{color:#e00000}
+.cGreen{color:#2aa001}
+.shipGuide textarea{width:485px;padding:5px;height:50px;border:1px solid #a6a6a6;font-size:11px;color:#7d7d7d;font-family:arial}
+.shipGuide textarea.black{color:#000}
+.infoShipType{margin:0 0 0 47px;padding:0 0 20px;background:url(images/newCart/bg2.png) repeat-x left bottom;width:565px}
+.infoShipType .rightInfo{width:535px}
+.addBookCtrl{height:16px;line-height:16px;color:#0159d0;text-decoration:underline;padding:0 0 0 16px;display:block;font-weight:bold;background:url(images/newCart/icon_add.png) no-repeat 0 center}
+.rightInfoActive{background:#F4F4F4}
+/* new from 13/03/2012 */
+.province_notice{padding:10px;background:#FFF9D7;color:red;text-align:center}
+.province_notice span{font-weight:bold;font-size:16px}

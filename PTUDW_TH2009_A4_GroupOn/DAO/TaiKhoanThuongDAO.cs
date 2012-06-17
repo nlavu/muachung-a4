@@ -52,5 +52,11 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return kq;
         }
 
+        public static PTUDW_TH2009_A4_GroupOn.DTO.sp_laythongtinkhbangusernameResult laythongtinkh_username(string username)
+        {
+            PTUDW_TH2009_A4_GroupOn.DTO.sp_laythongtinkhbangusernameResult item = data.sp_laythongtinkhbangusername(username).Single();
+            return item; 
+        }
+
     }
 }

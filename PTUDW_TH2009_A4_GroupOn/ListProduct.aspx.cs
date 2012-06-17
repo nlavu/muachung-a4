@@ -70,7 +70,7 @@ namespace PTUDW_TH2009_A4_GroupOn
                 {
                     float newprice = i_Vocher.GIAKHUYENMAI1;
                     float oldprice = i_Vocher.GIAGOC1;
-                    float percent = (newprice * 100) / oldprice;
+                    float percent = (1- (newprice/oldprice)) *100;
                     int year = i_Vocher.THOIGIANKTKM1.Year;
                     int month = i_Vocher.THOIGIANKTKM1.Month;
                     int day = i_Vocher.THOIGIANKTKM1.Day;
@@ -134,7 +134,7 @@ namespace PTUDW_TH2009_A4_GroupOn
                     </div>
                 </li>
             </ul>
-            <div class='dealpc'><div class='showdealpc'> "+percent.ToString()+@"%</div></div>     
+            <div class='dealpc'><div class='showdealpc'> "+percent.ToString("f2")+@"%</div></div>     
             <div class='ttdeal'><a href='#'>"+i_Vocher.TENVOUCHER1.ToString()+@"</a></div>
             <div class='price'>
                 <div class='new_price'><a href='#'>"+i_Vocher.GIAKHUYENMAI1.ToString()+@"đ</a></div>

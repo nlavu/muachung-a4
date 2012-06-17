@@ -117,6 +117,7 @@
     <Content Include="Admin\ThemDoanhNghiep.aspx" />
     <Content Include="Admin\ThemKhachHang.aspx" />
     <Content Include="Admin\QuanLyTaiKhoanDN.aspx" />
+    <Content Include="Checkout.aspx" />
     <Content Include="css\change-city.css" />
     <Content Include="css\default.css" />
     <Content Include="css\du-lich.css" />
@@ -268,9 +269,13 @@
     <Content Include="js\jquery.skinned-select.js" />
     <Content Include="js\jquery_mark.js" />
     <Content Include="js\login.js" />
+    <Content Include="js\master.js" />
+    <Content Include="js\MyGoogleMap.js" />
     <Content Include="js\register\jquery.inputfocus-0.9.min.js" />
     <Content Include="js\register\jquery.main.js" />
+    <Content Include="js\slide-register-login-menu.js" />
     <Content Include="ListProduct.aspx" />
+    <Content Include="MasterPage.aspx" />
     <Content Include="Member\AccountInfo.aspx" />
     <Content Include="Member\css\index.css" />
     <Content Include="Member\MyOrder.aspx" />
@@ -448,8 +453,17 @@
     </Compile>
     <Compile Include="BUS\HinhAnhBUS.cs" />
     <Compile Include="BUS\LoaiVoucherBUS.cs" />
+    <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="BUS\TaiKhoanDoanhNghiepBUS.cs" />
+    <Compile Include="BUS\TaiKhoanThuongBUS.cs" />
     <Compile Include="BUS\VoucherBUS.cs" />
+    <Compile Include="Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DAO\ChiTietDonHangDAO.cs" />
     <Compile Include="DAO\CommentDAO.cs" />
     <Compile Include="DAO\DiaChiDoanhNghiepDAO.cs" />
@@ -558,6 +572,13 @@
     </Compile>
     <Compile Include="ListProduct.aspx.designer.cs">
       <DependentUpon>ListProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.aspx.cs">
+      <DependentUpon>MasterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.aspx.designer.cs">
+      <DependentUpon>MasterPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Member\AccountInfo.aspx.cs">
       <DependentUpon>AccountInfo.aspx</DependentUpon>
