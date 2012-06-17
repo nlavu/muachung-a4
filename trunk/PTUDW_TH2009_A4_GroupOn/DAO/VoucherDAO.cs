@@ -233,6 +233,16 @@ namespace PTUDW_TH2009_A4_GroupOn.DAO
             return voucherDto;
         }
 
-
+        public static List<VoucherDTO> SelectTheoMaLoaidangban(int maloai)
+        {
+            List<VoucherDTO> lstVoucherDto = new List<VoucherDTO>();
+            List<Voucher> list = data.sp_VoucherTheoMaLoaidangban(maloai).ToList();
+            foreach (Voucher vc in list)
+            {
+                VoucherDTO voucherDto = new VoucherDTO(vc);
+                lstVoucherDto.Add(voucherDto);
+            }
+            return lstVoucherDto;
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MuaChung" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=BEHIEN-PC;Initial Catalog=MuaChung;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MuaChungConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=MuaChung;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MuaChungConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChiTietDonHang" Member="ChiTietDonHangs">
     <Type Name="ChiTietDonHang" Id="ID1">
       <Column Name="SOLUONGMUA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -586,6 +586,10 @@
   </Function>
   <Function Name="dbo.sp_SelectVoucherTheoMa" Method="sp_SelectVoucherTheoMa">
     <Parameter Name="mavoucher" Type="System.Int32" DbType="Int" />
+    <ElementType IdRef="ID11" />
+  </Function>
+  <Function Name="dbo.sp_VoucherTheoMaLoaidangban" Method="sp_VoucherTheoMaLoaidangban">
+    <Parameter Name="maloai" Type="System.Int32" DbType="Int" />
     <ElementType IdRef="ID11" />
   </Function>
 </Database>

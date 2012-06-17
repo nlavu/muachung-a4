@@ -80,3 +80,10 @@ go
 --exec sp_LayDoanhNghiepTheoMadn 2
 --
 --exec sp_Top6VoucherTheoMa 3
+
+create proc sp_VoucherTheoMaLoaidangban @maloai int as
+begin tran VoucherTheoMaLoaidangban 
+SET TRANSACTION ISOLATION LEVEL read committed
+select * from Voucher where MALOAIVOUCHER = @maloai and THOIGIANKTKM > getdate();
+commit tran VoucherTheoMaLoaidangban 
+go
